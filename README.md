@@ -12,11 +12,17 @@
 - [FEMTO (A.K.A. Pronostia)](#femto-aka-pronostia)
 - [IMS](#ims)
 - [XJTU-SY](#xjtu-sy)
+- [JNU](#jnu)
 - [MAFAULDA](#mafaulda)
 - [Politecnico di Torino - DIRG](#politecnico-di-torino---dirg)
 - [SEU](#seu)
 - [Ottawa](#ottawa)
 - [SDOL](#sdol)
+- [KAIST](#kaist)
+- [UNSW](#unsw)
+- [HIT-SM](#hit-sm)
+- [HIT](#hit)
+- [SUSU](#susu)
 
 
 
@@ -91,6 +97,13 @@ Data download - https://biaowang.tech/xjtu-sy-bearing-datasets/
 
 ![](./images/XJTU_testbench.png)
 
+## JNU
+
+Paper - https://www.sciencedirect.com/science/article/pii/S0952197623001549#b12
+Data download - https://github.com/ClarkGableWang/JNU-Bearing-Dataset
+
+![](./images/JNU_testbench.jpg)
+
 ## MAFAULDA
 
 Data download - https://www02.smt.ufrj.br/~offshore/mfs/page_01.html#SEC1
@@ -130,6 +143,47 @@ Data download - https://www.kau-sdol.com/bearing
 
 ![](./images/SDOL_testbench.webp)
 
+## KAIST
+
+Paper https://www.sciencedirect.com/science/article/pii/S2352340923001671
+
+![](./images/kaist_testbench.jpg)
+
+## UNSW
+
+Paper - https://www.sciencedirect.com/science/article/pii/S0888327021008116#s0030
+Data download - https://data.mendeley.com/datasets/h4df4mgrfb/3
+
+![](./images/UNSW_testbench.jpg)
+
+## HIT-SM
+
+Paper - https://iopscience.iop.org/article/10.1088/1361-6501/ac7941/meta
+Data download - https://github.com/hitwzc/Bearing-datasets
+
+
+### SpectraQuest MFS dataset
+
+![](./images/HIT_spectraquest_testbench.jpg)
+
+### Seelf-built test rig dataset
+
+![](./images/HIT_selfbuilt_testbench.png)
+
+## HIT
+
+Paper - https://ojs.istp-press.com/dmd/article/view/314/333
+Data download - https://github.com/HouLeiHIT/HIT-dataset
+
+![](./images/HIT_testbench.jpg)
+
+## SUSU
+
+Paper - https://www.sciencedirect.com/science/article/pii/S0888327022005714?via%3Dihub#s0005
+
+Data download - https://github.com/susu-cm/bearings-dataset
+
+![](./images/susu_testbench.jpg)
 
 # Inspiration
 
