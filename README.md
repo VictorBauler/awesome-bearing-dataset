@@ -18,11 +18,14 @@
 - [SEU](#seu)
 - [Ottawa](#ottawa)
 - [SDOL](#sdol)
+- [University of Seoul](#university-of-seoul)
+- [University of Ferrara](#university-of-ferrara)
 - [KAIST](#kaist)
 - [UNSW](#unsw)
 - [HIT-SM](#hit-sm)
 - [HIT](#hit)
 - [SUSU](#susu)
+- [NCRA](#ncra)
 
 
 
@@ -153,11 +156,33 @@ Data download - https://www.kau-sdol.com/bearing
 
 ![](./images/SDOL_testbench.webp)
 
+## University of Seoul
+
+Paper https://www.sciencedirect.com/science/article/pii/S235234092400903X
+
+![](./images/seoul_testbench.jpg)
+
+## University of Ferrara
+
+Paper https://www.sciencedirect.com/science/article/pii/S2352340924005870
+
+![](./images/ferrara_testbench.jpg)
+
 ## KAIST
+
+### Fault diagnostic
 
 Paper https://www.sciencedirect.com/science/article/pii/S2352340923001671
 
 ![](./images/kaist_testbench.jpg)
+
+### Run-to-failure
+
+Paper https://www.sciencedirect.com/science/article/pii/S235234092400372X?pes=vor&utm_source=scopus&getft_integrator=scopus
+
+Data download - https://data.mendeley.com/datasets/5hcdd3tdvb/6
+
+![](./images/kaist_rtf_testbench.jpg)
 
 ## UNSW
 
@@ -194,6 +219,12 @@ Paper - https://www.sciencedirect.com/science/article/pii/S0888327022005714?via%
 Data download - https://github.com/susu-cm/bearings-dataset
 
 ![](./images/susu_testbench.jpg)
+
+## NCRA
+
+Paper - https://www.sciencedirect.com/science/article/pii/S2352340922005170
+
+![](./images/ncra_testbench.jpg)
 
 # Inspiration
 
