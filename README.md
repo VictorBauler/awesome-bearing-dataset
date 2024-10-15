@@ -129,11 +129,21 @@ Data download - https://mlmechanics.ics.uci.edu/
 
 ## Ottawa
 
+### 2018 - (Huan Huang & Natalie Baddour)
+
 Paper https://www.sciencedirect.com/science/article/pii/S2352340918314124
 
 Data download - https://data.mendeley.com/datasets/v43hmbwxpm/1
 
 ![](./images/ottawa_testbench.jpg)
+
+### 2023 - (Mert Sehri & Patrick Dumond & Michel Bouchard)
+
+Paper https://www.sciencedirect.com/science/article/pii/S2352340923004456?via%3Dihub
+
+Data download - https://data.mendeley.com/datasets/y2px5tg92h/5
+
+![](./images/ottawa2023_testbench.jpg)
 
 ## SDOL
 
