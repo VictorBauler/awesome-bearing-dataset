@@ -33,6 +33,8 @@ The following table provides a consolidated overview of prominent datasets for r
 | [Harbin Institute of Technology (HIT-SM)](#harbin-institute-of-technology-hit-sm) | Harbin Institute of Technology                        | ~2022     | Diagnosis    | Artificial             | Vibration                    |
 | [PHM09 Gearbox](#phm09-gearbox)                                  | PHM Society                                         | 2009      | Diagnosis    | Artificial             | Vibration                    |
 | [University of Ferrara](#university-of-ferrara)                  | University of Ferrara                               | 2024      | Prognostics  | Natural (Accelerated)  | Vibration                    |
+| [SUBF v2.0 Dataset: Bearing Faults Sound Data](subf-v20-dataset-bearing-faults-sound-data) | University of Engineering and Technology Taxila      | 2025      | Diagnosis    | Artificial             | Acoustic                     |
+| [FSTF Mechanical Laboratory](#fstf-mechanical-laboratory)       | FSTF Mechanical Laboratory at Sidi Mohamed Ben Abdellah University  | 2023      | Diagnosis    | Artificial & Natural | Acoustic |
 
 ---
 
@@ -189,6 +191,21 @@ The following table provides a consolidated overview of prominent datasets for r
 
 | **Overview:** A run-to-failure dataset specifically focused on the prognostics of self-aligning double-row ball bearings.<br><br>**Experimental Setup:** The dataset was created from six accelerated run-to-failure tests under a constant radial load.<br><br>**Data Characteristics:** Contains continuous radial acceleration signals recorded for the entire duration of each test.<br><br>**Operating Conditions:** Experiments were conducted under constant speed and load to provide a controlled environment for observing degradation.<br><br>**Source:** [University of Ferrara Research Data](https://sfera.unife.it/handle/11392/2569668) | ![University of Ferrara Test Rig](images/ferrara_testbench.jpg) |
 | :--- | :--- |
+
+---
+
+### SUBF v2.0 Dataset: Bearing Faults Sound Data
+| **Overview:**  This dataset is an audio-based benchmark for rolling bearings fault diagnosis. It contains machine sound recordings from an induction-motor test rig under three bearing health conditons (healthy, inner race fault, outer race fault).<br><br>**Experimental Setup:** The dataset was created on an in-house test rig at the University of Engineering and Technology Taxila, which consisted of a 3-phase 0.25 HP, 50 Hz induction motor running at 1440 RPM, driving a shaft supported by two bearings. The bearing on the left side of the shaft was swapped between healthy, inner race fault, and outer race fault units. A low-cost omnidirectional condenser microphone (BOYA BY-M1) was positioned close to the test bearing, connected to a laptop used for data recording.<br><br>**Data Characteristics:** Contains a total of 18 hours of machine sounds recorded at a sampling frequency of 10 kHz, with 6 hours for each health class (healthy, IR, OR). Each continuous 1-hour run was segmented into non-overlapping 10 second clips, creating 2160 signals per health condition (6480 clips in total).<br><br>**Operating Conditions:** All recordings were taken at nominally constant speed (1440 RPM) under steady supply conditions, with no deliberate variation in load or speed. Faults correspond to localized inner-race and outer-race defects seeded in one bearing, while the other bearing remains healthy, ensuring that class differences are dominated by the target bearing condition.<br><br>**Source:** [Kaggle – SUBF v2.0 Dataset: Bearing Faults Sound Data](https://www.kaggle.com/datasets/sumairaziz/subf-v2-0-dataset-bearing-faults-sound-data/data) | ![SUBF v 2.0 Test Rig](images/SUBF_v2_0_Dataset_testbench.jpg) |
+| :--- | :--- |
+
+---
+
+### FSTF Mechanical Laboratory
+
+| **Overview:** The FSTF Mechanical Laboratory dataset provides sound recordings of ball bearings under both normal and faulty conditions at different operating speeds. It is built on a rotor test rig and is intended to support research on acoustic-based bearing fault diagnosis. Sound is captured at positions proximal and distal to the bearing housings, offering a benchmark for audio-based machine diagnostics.<br><br>**Experimental Setup:** Experiments were conducted on a specialized rotor system (PT 500 with the PT 500.12 roller bearing faults kit from Gunt) equipped with SKF 6004 deep-groove ball bearings. Fault conditions include artificially induced localized defects on the inner race, outer race, and rolling element (ball), as well as a looseness defect resulting from prolonged operation (natural). Recordings were made at multiple operating speeds and at different sensor positions relative to the bearing housings.<br><br>**Data Characteristics:** The dataset is divided into two main categories: **Dataset 1**, consisting of recordings obtained using a stethoscope, and **Dataset 2**, consisting of recordings without a stethoscope under different operating conditions. In both cases, sound signals are acquired as `.wav` files using the **VibroTeak** mobile application (developed by the authors) at a sampling rate of **44.1 kHz**. The audio files are then imported into MATLAB (via `audioread`) for further processing.<br><br>**Operating Conditions:** Tests cover normal and faulty bearings over a range of rotational speeds and measurement configurations (proximal/distal to the housing, with/without stethoscope). This variability, combined with real acoustic background noise, makes the dataset well suited for developing and benchmarking robust diagnostic algorithms for rolling-element bearings using sound data.<br><br>**Source:** [Mendeley Data – Sound Datasets of a Rolling Element Bearing under Various Conditions](https://data.mendeley.com/datasets/n9y9c7xrz3/1) | ![FSTF Mechanical Lab Test Rig](images/FSTF_Mechanical_Laboratory_Test_Rig.png) |
+| :--- | :--- |
+
+
 
 ## 🤝 How to Contribute
 
