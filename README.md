@@ -12,7 +12,7 @@ Each dataset name links to its description in [docs/datasets.md](docs/datasets.m
 
 ### Core Datasets
 
-The most widely used benchmarks, ordered by citations per year of their reference paper (OpenAlex, September 2026). MFPT, MAFAULDA, and PHM09 are included by convention (no official reference paper), and the Paderborn and KAIST run-to-failure datasets are listed alongside their groups' core datasets. See [docs/citations.md](docs/citations.md) for the full ranking.
+Datasets whose reference paper has 10 or more citations per year, ordered by citations per year of their reference paper (OpenAlex, September 2026). MFPT, MAFAULDA, and PHM09 are included by convention (no official reference paper), and the Paderborn and KAIST run-to-failure datasets are listed alongside their groups' core datasets. See [docs/citations.md](docs/citations.md) for the full ranking.
 
 | Dataset | Originating Institution(s) | Year | Primary Task | Fault Generation | Key Signals |
 | :--- | :--- | :--- | :--- | :--- | :--- |

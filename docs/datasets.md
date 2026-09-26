@@ -6,21 +6,21 @@ Detailed descriptions of the datasets listed in the [README](../README.md#summar
 
 ### Case Western Reserve University (CWRU)
 
-| **Overview:** The CWRU dataset is the most frequently cited benchmark in bearing fault diagnosis. It provides vibration data from a motor test rig with artificially induced faults, serving as a de facto standard for validating new classification algorithms.<br><br>**Experimental Setup:** The test stand used a 2 hp motor with SKF deep-groove ball bearings. Single-point faults of varying diameters (0.007 to 0.040 inches) were introduced using electro-discharge machining (EDM).<br><br>**Data Characteristics:** The dataset contains vibration data from drive-end (DE) and fan-end (FE) accelerometers, sampled at 12 kHz and 48 kHz in MATLAB `.mat` format.<br><br>**Operating Conditions:** Experiments were run under four motor loads (0, 1, 2, and 3 hp), corresponding to speeds from approximately 1797 to 1730 RPM.<br><br>**Source:** [CWRU Bearing Data Center](https://engineering.case.edu/bearingdatacenter) \| [Commonly Cited Benchmark Study (MSSP, 2015)](https://doi.org/10.1016/j.ymssp.2015.04.021) | ![CWRU Test Rig](../images/CWRU_teststand.jpeg) |
+| **Overview:** Vibration data from a motor test rig with artificially induced bearing faults, released by the Case Western Reserve University Bearing Data Center. Its reference study has the highest citation count in this list (see [citations](citations.md)).<br><br>**Experimental Setup:** The test stand used a 2 hp motor with SKF deep-groove ball bearings. Single-point faults of varying diameters (0.007 to 0.040 inches) were introduced using electro-discharge machining (EDM).<br><br>**Data Characteristics:** The dataset contains vibration data from drive-end (DE) and fan-end (FE) accelerometers, sampled at 12 kHz and 48 kHz in MATLAB `.mat` format.<br><br>**Operating Conditions:** Experiments were run under four motor loads (0, 1, 2, and 3 hp), corresponding to speeds from approximately 1797 to 1730 RPM.<br><br>**Source:** [CWRU Bearing Data Center](https://engineering.case.edu/bearingdatacenter) \| [Commonly Cited Benchmark Study (MSSP, 2015)](https://doi.org/10.1016/j.ymssp.2015.04.021) | ![CWRU Test Rig](../images/CWRU_teststand.jpeg) |
 | :--- | :--- |
 
 ---
 
 ### Xi'an Jiaotong University (XJTU-SY)
 
-| **Overview:** The XJTU-SY dataset is a high-quality resource for fault prognostics, containing complete run-to-failure data from 15 rolling element bearings under accelerated degradation.<br><br>**Experimental Setup:** Bearings were run under stressful conditions until natural failure, capturing the entire degradation trajectory.<br><br>**Data Characteristics:** Contains horizontal and vertical vibration signals sampled at 25.6 kHz, recorded in 1.28-second snapshots at one-minute intervals.<br><br>**Operating Conditions:** Experiments were conducted under three different working conditions, varying in rotational speed and radial load (e.g., 2100 RPM/12 kN, 2250 RPM/11 kN).<br><br>**Source:** [GitHub Repository](https://github.com/WangBiaoXJTU/xjtu-sy-bearing-datasets) \| [Publication (IEEE Trans. Reliability, 2020)](https://doi.org/10.1109/TR.2018.2882682) | ![XJTU-SY Test Rig](../images/XJTU_testbench.png) |
+| **Overview:** A prognostics dataset containing complete run-to-failure data from 15 rolling element bearings under accelerated degradation.<br><br>**Experimental Setup:** Bearings were run under stressful conditions until natural failure, capturing the entire degradation trajectory.<br><br>**Data Characteristics:** Contains horizontal and vertical vibration signals sampled at 25.6 kHz, recorded in 1.28-second snapshots at one-minute intervals.<br><br>**Operating Conditions:** Experiments were conducted under three different working conditions, varying in rotational speed and radial load (e.g., 2100 RPM/12 kN, 2250 RPM/11 kN).<br><br>**Source:** [GitHub Repository](https://github.com/WangBiaoXJTU/xjtu-sy-bearing-datasets) \| [Publication (IEEE Trans. Reliability, 2020)](https://doi.org/10.1109/TR.2018.2882682) | ![XJTU-SY Test Rig](../images/XJTU_testbench.png) |
 | :--- | :--- |
 
 ---
 
 ### Southeast University (SEU)
 
-| **Overview:** A comprehensive resource collected from a Drivetrain Dynamics Simulator (DDS), including data for both bearings and gears to allow for the study of complex mechanical systems.<br><br>**Experimental Setup:** The data was acquired from the DDS test rig and is divided into sub-datasets for bearing and gear faults.<br><br>**Data Characteristics:** Contains multivariate time-series data with 8 channels, including vibration from multiple components and motor torque. Vibration was sampled at 12 kHz.<br><br>**Operating Conditions:** Data was collected under two speed-load configurations: 20 Hz-0V and 30 Hz-2V.<br><br>**Source:** [GitHub Repository](https://github.com/cathysiyu/Mechanical-datasets) \| [Publication (IEEE Trans. Industrial Informatics, 2019)](https://doi.org/10.1109/TII.2018.2864759) | ![SEU Test Rig](../images/SEU_testbench.gif) |
+| **Overview:** Data collected from a Drivetrain Dynamics Simulator (DDS), with separate sub-datasets for bearing faults and gear faults.<br><br>**Experimental Setup:** The data was acquired from the DDS test rig and is divided into sub-datasets for bearing and gear faults.<br><br>**Data Characteristics:** Contains multivariate time-series data with 8 channels, including vibration from multiple components and motor torque. Vibration was sampled at 12 kHz.<br><br>**Operating Conditions:** Data was collected under two speed-load configurations: 20 Hz-0V and 30 Hz-2V.<br><br>**Source:** [GitHub Repository](https://github.com/cathysiyu/Mechanical-datasets) \| [Publication (IEEE Trans. Industrial Informatics, 2019)](https://doi.org/10.1109/TII.2018.2864759) | ![SEU Test Rig](../images/SEU_testbench.gif) |
 | :--- | :--- |
 
 ---
@@ -34,31 +34,31 @@ Detailed descriptions of the datasets listed in the [README](../README.md#summar
 
 ### Paderborn University (PU)
 
-| **Overview:** The PU dataset is a comprehensive resource for fault diagnosis, notable for its inclusion of multiple data modalities and a combination of artificial and natural faults.<br><br>**Experimental Setup:** A modular test rig was used to collect data from 32 bearings: 6 healthy, 12 with artificial damage, and 14 with real damage from accelerated life tests.<br><br>**Data Characteristics:** Provides high-resolution vibration and motor current signals, both sampled at 64 kHz, in `.mat` format.<br><br>**Operating Conditions:** Data was collected under four conditions, with different combinations of rotational speed (1500/900 RPM), load torque, and radial force.<br><br>**Source:** [Paderborn University Bearing Datacenter](https://mb.uni-paderborn.de/en/kat/research/kat-datacenter/bearing-datacenter) \| [Publication (PHM Society European Conference, 2016)](https://doi.org/10.36001/phme.2016.v3i1.1577) | ![Paderborn Test Rig](../images/Paderborn_testbench.png) |
+| **Overview:** A fault diagnosis dataset with vibration and motor current signals, covering both artificial damage and natural damage from accelerated life tests.<br><br>**Experimental Setup:** A modular test rig was used to collect data from 32 bearings: 6 healthy, 12 with artificial damage, and 14 with real damage from accelerated life tests.<br><br>**Data Characteristics:** Provides vibration and motor current signals, both sampled at 64 kHz, in `.mat` format.<br><br>**Operating Conditions:** Data was collected under four conditions, with different combinations of rotational speed (1500/900 RPM), load torque, and radial force.<br><br>**Source:** [Paderborn University Bearing Datacenter](https://mb.uni-paderborn.de/en/kat/research/kat-datacenter/bearing-datacenter) \| [Publication (PHM Society European Conference, 2016)](https://doi.org/10.36001/phme.2016.v3i1.1577) | ![Paderborn Test Rig](../images/Paderborn_testbench.png) |
 | :--- | :--- |
 
 ---
 
 ### Paderborn University (Time-Varying Run-to-Failure)
 
-* **Overview:** A run-to-failure dataset of ball bearings subjected to time-varying load and speed conditions. This is a distinct contribution from the same institution as the PU diagnosis dataset above, specifically targeting prognostics under non-stationary operating conditions — a critical and under-represented scenario.
-* **Experimental Setup:** Ball bearings were run to failure under dynamically changing load and speed profiles, rather than constant conditions. This reflects real-world machinery behavior more accurately than most existing run-to-failure datasets.
+* **Overview:** A run-to-failure dataset of ball bearings subjected to time-varying load and speed conditions. It comes from the same institution as the PU diagnosis dataset and targets prognostics under non-stationary operating conditions.
+* **Experimental Setup:** Ball bearings were run to failure under dynamically changing load and speed profiles rather than constant conditions.
 * **Data Characteristics:** Contains vibration and temperature signals recorded throughout the bearing's entire lifecycle.
-* **Operating Conditions:** Time-varying speed and load profiles designed to simulate realistic industrial operating regimes.
+* **Operating Conditions:** Time-varying speed and load profiles.
 * **Source:** [Zenodo (DOI: 10.5281/zenodo.10805042)](https://doi.org/10.5281/zenodo.10805042) | [Publication (PHM Society European Conference 2024)](https://papers.phmsociety.org/index.php/phme/article/view/4101)
 
 ---
 
 ### NASA IMS
 
-| **Overview:** A seminal run-to-failure dataset from the NASA Ames Prognostics Data Repository, widely used for validating RUL prediction algorithms.<br><br>**Experimental Setup:** Four bearings were run continuously until failure under a significant radial load. The dataset contains three separate run-to-failure experiments.<br><br>**Data Characteristics:** Vibration data was collected at 20 kHz in 1-second snapshots every 10 minutes, provided in ASCII text files.<br><br>**Operating Conditions:** All experiments were conducted under a single, constant condition: 2000 RPM speed and 6000 lbs radial load.<br><br>**Source:** [NASA Prognostics Data Repository](https://data.nasa.gov/dataset/ims-bearings) \| [Publication (Journal of Sound and Vibration, 2006)](https://doi.org/10.1016/j.jsv.2005.03.007) | ![IMS Test Rig](../images/IMS_testsetup.jpg) |
+| **Overview:** A run-to-failure dataset distributed through the NASA Ames Prognostics Data Repository and used in remaining useful life (RUL) prediction studies.<br><br>**Experimental Setup:** Four bearings were run continuously until failure under a constant radial load. The dataset contains three separate run-to-failure experiments.<br><br>**Data Characteristics:** Vibration data was collected at 20 kHz in 1-second snapshots every 10 minutes, provided in ASCII text files.<br><br>**Operating Conditions:** All experiments were conducted under a single, constant condition: 2000 RPM speed and 6000 lbs radial load.<br><br>**Source:** [NASA Prognostics Data Repository](https://data.nasa.gov/dataset/ims-bearings) \| [Publication (Journal of Sound and Vibration, 2006)](https://doi.org/10.1016/j.jsv.2005.03.007) | ![IMS Test Rig](../images/IMS_testsetup.jpg) |
 | :--- | :--- |
 
 ---
 
 ### University of Ottawa Time-Varying Speed (2018)
 
-| **Overview:** A diagnosis dataset recorded under time-varying rotational speed, one of the first public datasets targeting non-stationary operation. The record's title is *Bearing Vibration Data under Time-varying Rotational Speed Conditions*; it has no official acronym.<br><br>**Experimental Setup:** A SpectraQuest machinery fault simulator (MFS-PK5M) with two ER16K ball bearings; the right-hand bearing is replaced to set the health condition. Version 2 contains 60 recordings covering healthy, inner race, outer race, ball, and combined faults (version 1 had only 36 recordings: healthy, inner race, and outer race). How the defects were made is not stated.<br><br>**Data Characteristics:** Vibration (accelerometer) and shaft speed (encoder), sampled at 200 kHz for 10 s per recording.<br><br>**Operating Conditions:** Four speed profiles: increasing, decreasing, increasing then decreasing, and decreasing then increasing.<br><br>**Source:** [Mendeley Data (v2)](https://data.mendeley.com/datasets/v43hmbwxpm/2) \| [Publication (Data in Brief, 2018)](https://doi.org/10.1016/j.dib.2018.11.019) | ![Ottawa 2018 Test Rig](../images/ottawa_testbench.jpg) |
+| **Overview:** A diagnosis dataset recorded under time-varying rotational speed. The record's title is *Bearing Vibration Data under Time-varying Rotational Speed Conditions*; it has no official acronym.<br><br>**Experimental Setup:** A SpectraQuest machinery fault simulator (MFS-PK5M) with two ER16K ball bearings; the right-hand bearing is replaced to set the health condition. Version 2 contains 60 recordings covering healthy, inner race, outer race, ball, and combined faults (version 1 had only 36 recordings: healthy, inner race, and outer race). How the defects were made is not stated.<br><br>**Data Characteristics:** Vibration (accelerometer) and shaft speed (encoder), sampled at 200 kHz for 10 s per recording.<br><br>**Operating Conditions:** Four speed profiles: increasing, decreasing, increasing then decreasing, and decreasing then increasing.<br><br>**Source:** [Mendeley Data (v2)](https://data.mendeley.com/datasets/v43hmbwxpm/2) \| [Publication (Data in Brief, 2018)](https://doi.org/10.1016/j.dib.2018.11.019) | ![Ottawa 2018 Test Rig](../images/ottawa_testbench.jpg) |
 | :--- | :--- |
 
 ---
@@ -72,7 +72,7 @@ Detailed descriptions of the datasets listed in the [README](../README.md#summar
 
 ### KAIST Run-to-Failure
 
-| **Overview:** A run-to-failure dataset that captures the entire lifespan of a ball bearing under accelerated testing, suitable for prognostics research.<br><br>**Experimental Setup:** An accelerated life test was run for 128 hours until failure criteria (bearing temperature above 85 °C and vibration above 9 m/s²) were met.<br><br>**Data Characteristics:** Includes vibration data (x- and y-axes) and temperature data, sampled at 25.6 kHz. The published dataset consists of hourly snapshots.<br><br>**Operating Conditions:** The experiment was run at a nearly constant speed of 1770-1780 RPM under an axial load of 2.94 kN and a vertical load of 5.88 kN. Note that versions 1–3 of the Mendeley record state 3600 RPM; versions 4–6 state 1770–1780 RPM. The description here follows version 6.<br><br>**Source:** [Mendeley Data (v6)](https://data.mendeley.com/datasets/5hcdd3tdvb/6) \| [Publication (Data in Brief, 2024)](https://doi.org/10.1016/j.dib.2024.110403) | ![KAIST RUL Test Rig](../images/kaist_rtf_testbench.jpg) |
+| **Overview:** A run-to-failure dataset that captures the entire lifespan of a ball bearing under accelerated testing.<br><br>**Experimental Setup:** An accelerated life test was run for 128 hours until failure criteria (bearing temperature above 85 °C and vibration above 9 m/s²) were met.<br><br>**Data Characteristics:** Includes vibration data (x- and y-axes) and temperature data, sampled at 25.6 kHz. The published dataset consists of hourly snapshots.<br><br>**Operating Conditions:** The experiment was run at a nearly constant speed of 1770-1780 RPM under an axial load of 2.94 kN and a vertical load of 5.88 kN. Note that versions 1–3 of the Mendeley record state 3600 RPM; versions 4–6 state 1770–1780 RPM. The description here follows version 6.<br><br>**Source:** [Mendeley Data (v6)](https://data.mendeley.com/datasets/5hcdd3tdvb/6) \| [Publication (Data in Brief, 2024)](https://doi.org/10.1016/j.dib.2024.110403) | ![KAIST RUL Test Rig](../images/kaist_rtf_testbench.jpg) |
 | :--- | :--- |
 
 ---
@@ -97,35 +97,35 @@ Detailed descriptions of the datasets listed in the [README](../README.md#summar
 
 ### FEMTO-ST (PRONOSTIA)
 
-| **Overview:** The centerpiece of the 2012 IEEE Prognostic Challenge, consisting of 17 accelerated run-to-failure experiments designed to validate prognostic methods.<br><br>**Experimental Setup:** A testbed applied heavy loads to accelerate bearing degradation. Tests were halted when vibration exceeded a 20g safety threshold.<br><br>**Data Characteristics:** Includes horizontal/vertical vibration (25.6 kHz) and temperature signals, captured in intermittent 0.1-second bursts every 10 seconds.<br><br>**Operating Conditions:** Includes three distinct operating conditions, each with a different combination of speed and load.<br><br>**Source:** Unofficial Mirror: [GitHub](https://github.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset) \| [Publication (IEEE PHM Conference, 2012)](https://hal.science/hal-00719503) | ![FEMTO Test Rig](../images/FEMTO_testbench.png) |
+| **Overview:** The dataset of the 2012 IEEE PHM Prognostic Challenge, consisting of 17 accelerated run-to-failure experiments designed to validate prognostic methods.<br><br>**Experimental Setup:** A testbed applied heavy loads to accelerate bearing degradation. Tests were halted when vibration exceeded a 20g safety threshold.<br><br>**Data Characteristics:** Includes horizontal/vertical vibration (25.6 kHz) and temperature signals, captured in intermittent 0.1-second bursts every 10 seconds.<br><br>**Operating Conditions:** Includes three distinct operating conditions, each with a different combination of speed and load.<br><br>**Source:** Unofficial Mirror: [GitHub](https://github.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset) \| [Publication (IEEE PHM Conference, 2012)](https://hal.science/hal-00719503) | ![FEMTO Test Rig](../images/FEMTO_testbench.png) |
 | :--- | :--- |
 
 ---
 
 ### HUST (Hanoi University of Science and Technology)
 
-| **Overview:** A modern resource for fault diagnosis created to address the limitation of single-bearing-type datasets.<br><br>**Experimental Setup:** Data was collected from a purpose-built testbench. Artificially induced faults include cracks and combination faults (e.g., inner race + ball).<br><br>**Data Characteristics:** Contains 99 raw vibration signals, each sampled at 51.2 kHz for 10 seconds.<br><br>**Operating Conditions:** Experiments cover five different bearing types under three different motor loads, making it ideal for testing generalization.<br><br>**Source:** [Mendeley Data](https://data.mendeley.com/datasets/cbv7jyx4p9/1) \| [Publication (BMC Research Notes, 2023)](https://doi.org/10.1186/s13104-023-06400-4) | ![HUST Test Rig](../images/HUST_testbench.png) |
+| **Overview:** A fault diagnosis dataset covering five bearing types.<br><br>**Experimental Setup:** Data was collected from a purpose-built testbench. Artificially induced faults include cracks and combination faults (e.g., inner race + ball).<br><br>**Data Characteristics:** Contains 99 raw vibration signals, each sampled at 51.2 kHz for 10 seconds.<br><br>**Operating Conditions:** Experiments cover five different bearing types under three different motor loads.<br><br>**Source:** [Mendeley Data](https://data.mendeley.com/datasets/cbv7jyx4p9/1) \| [Publication (BMC Research Notes, 2023)](https://doi.org/10.1186/s13104-023-06400-4) | ![HUST Test Rig](../images/HUST_testbench.png) |
 | :--- | :--- |
 
 ---
 
 ### Politecnico di Torino (DIRG)
 
-| **Overview:** An open-access dataset from the Dynamic and Identification Research Group (DIRG) aeronautical bearing test rig, covering very high speeds and a long endurance test.<br><br>**Experimental Setup:** A high-speed spindle drives a hollow shaft supported by two identical roller bearings (B1, B3); B1 carries the damage. A central bearing (B2) is loaded radially through a sledge. Damage consists of indentations on a roller or on the inner ring at three severities (150, 250, 450 µm) plus healthy.<br><br>**Data Characteristics:** Two triaxial accelerometers on the B1 and B2 supports.<br><br>**Operating Conditions:** Stationary acquisitions at speeds of 0–500 Hz (up to 30,000 RPM) and radial loads of 0–1800 N, plus an endurance acquisition of about 230 hours on the 450 µm roller indentation.<br><br>**Source:** [Zenodo (DOI: 10.5281/zenodo.3559552)](https://doi.org/10.5281/zenodo.3559552) \| [Publication (MSSP, 2019)](https://doi.org/10.1016/j.ymssp.2018.10.010) | ![Politecnico di Torino DIRG Test Rig](../images/torino_dirg_testbench.png) |
+| **Overview:** An open-access dataset from the Dynamic and Identification Research Group (DIRG) aeronautical bearing test rig, covering speeds up to 30,000 RPM and an endurance test of about 230 hours.<br><br>**Experimental Setup:** A high-speed spindle drives a hollow shaft supported by two identical roller bearings (B1, B3); B1 carries the damage. A central bearing (B2) is loaded radially through a sledge. Damage consists of indentations on a roller or on the inner ring at three severities (150, 250, 450 µm) plus healthy.<br><br>**Data Characteristics:** Two triaxial accelerometers on the B1 and B2 supports.<br><br>**Operating Conditions:** Stationary acquisitions at speeds of 0–500 Hz (up to 30,000 RPM) and radial loads of 0–1800 N, plus an endurance acquisition of about 230 hours on the 450 µm roller indentation.<br><br>**Source:** [Zenodo (DOI: 10.5281/zenodo.3559552)](https://doi.org/10.5281/zenodo.3559552) \| [Publication (MSSP, 2019)](https://doi.org/10.1016/j.ymssp.2018.10.010) | ![Politecnico di Torino DIRG Test Rig](../images/torino_dirg_testbench.png) |
 | :--- | :--- |
 
 ---
 
 ### Jiangnan University (JNU)
 
-| **Overview:** A modern resource featuring artificially induced faults, designed to provide clean data for developing classification algorithms under different speed domains.<br><br>**Experimental Setup:** Data was collected from a test rig using a single accelerometer. Faults were simulated by creating tiny dents on bearing components via wire-cutting.<br><br>**Data Characteristics:** Contains vibration signals sampled at 50 kHz, provided in `.csv` format.<br><br>**Operating Conditions:** Experiments were conducted under three distinct rotational speeds: 600, 800, and 1000 RPM.<br><br>**Source:** [GitHub Repository](https://github.com/ClarkGableWang/JNU-Bearing-Dataset) \| [Publication (Sensors, 2013)](https://doi.org/10.3390/s130608013) | ![JNU Test Rig](../images/JNU_testbench.jpg) |
+| **Overview:** A fault diagnosis dataset with artificially induced faults recorded at three rotational speeds.<br><br>**Experimental Setup:** Data was collected from a test rig using a single accelerometer. Faults were simulated by creating dents on bearing components via wire-cutting.<br><br>**Data Characteristics:** Contains vibration signals sampled at 50 kHz, provided in `.csv` format.<br><br>**Operating Conditions:** Experiments were conducted under three distinct rotational speeds: 600, 800, and 1000 RPM.<br><br>**Source:** [GitHub Repository](https://github.com/ClarkGableWang/JNU-Bearing-Dataset) \| [Publication (Sensors, 2013)](https://doi.org/10.3390/s130608013) | ![JNU Test Rig](../images/JNU_testbench.jpg) |
 | :--- | :--- |
 
 ---
 
 ### University of New South Wales (UNSW)
 
-| **Overview:** A run-to-failure resource with a specific focus on developing methods for bearing fault severity assessment by tracking the natural evolution of spalls.<br><br>**Experimental Setup:** Contains data from four separate run-to-failure experiments where spall damage developed naturally under operational stress.<br><br>**Data Characteristics:** Contains horizontal and vertical acceleration signals and an encoder signal, provided in `.mat` format.<br><br>**Operating Conditions:** Data was collected at multiple speeds throughout the run-to-failure tests.<br><br>**Source:** [Mendeley Data](https://data.mendeley.com/datasets/h4df4mgrfb/3) \| [Publication (MSSP, 2022)](https://doi.org/10.1016/j.ymssp.2021.108466) | ![UNSW Test Rig](../images/UNSW_testbench.jpg) |
+| **Overview:** Run-to-failure data recorded to track the natural evolution of spalls, for bearing fault severity assessment.<br><br>**Experimental Setup:** Contains data from four separate run-to-failure experiments where spall damage developed naturally under operational stress.<br><br>**Data Characteristics:** Contains horizontal and vertical acceleration signals and an encoder signal, provided in `.mat` format.<br><br>**Operating Conditions:** Data was collected at multiple speeds throughout the run-to-failure tests.<br><br>**Source:** [Mendeley Data](https://data.mendeley.com/datasets/h4df4mgrfb/3) \| [Publication (MSSP, 2022)](https://doi.org/10.1016/j.ymssp.2021.108466) | ![UNSW Test Rig](../images/UNSW_testbench.jpg) |
 | :--- | :--- |
 
 ---
@@ -141,8 +141,8 @@ Detailed descriptions of the datasets listed in the [README](../README.md#summar
 ---
 
 ### Machinery Failure Prevention Technology (MFPT)
-* **Overview:** One of the earliest public datasets, offering a hybrid of data from a laboratory test rig and real-world machinery.
-* **Experimental Setup:** Includes baseline and artificial fault data from a test rig, alongside valuable real-world fault data from components like wind turbine bearings.
+* **Overview:** Data from a laboratory test rig combined with fault data from real machinery.
+* **Experimental Setup:** Includes baseline and artificial fault data from a test rig, alongside real-world fault data from components such as wind turbine bearings.
 * **Data Characteristics:** Primarily vibration signals in `.mat` format, with high sampling rates for the test rig data.
 * **Operating Conditions:** The test rig data was collected at a constant speed (25 Hz) with a range of different loads. Real-world conditions vary by application.
 * **Source:** [MFPT Society](https://www.mfpt.org/fault-data-sets/)
@@ -151,13 +151,13 @@ Detailed descriptions of the datasets listed in the [README](../README.md#summar
 
 ### MAFAULDA (Machinery Fault Database)
 
-| **Overview:** A comprehensive resource that extends beyond bearing faults to include other common issues like imbalance and misalignment, facilitating system-level diagnostics.<br><br>**Experimental Setup:** Data was generated on a SpectraQuest Machinery Fault Simulator, covering normal operation and various fault types.<br><br>**Data Characteristics:** The dataset is multi-modal, with each recording containing 8 channels: a tachometer signal, 3-axis acceleration for two bearings, and a microphone for acoustic signals.<br><br>**Operating Conditions:** Covers a range of operating conditions specific to individual experimental files.<br><br>**Source:** [UFRJ Website](https://www02.smt.ufrj.br/~offshore/mfs/page_01.html) \| [Commonly Cited Paper (SBrT, 2017)](https://doi.org/10.14209/sbrt.2017.133) | ![MAFAULDA Test Rig](../images/MAFAULDA_testbench.png) |
+| **Overview:** A machinery fault database that includes imbalance and misalignment faults in addition to bearing faults.<br><br>**Experimental Setup:** Data was generated on a SpectraQuest Machinery Fault Simulator, covering normal operation and various fault types.<br><br>**Data Characteristics:** The dataset is multi-modal, with each recording containing 8 channels: a tachometer signal, 3-axis acceleration for two bearings, and a microphone for acoustic signals.<br><br>**Operating Conditions:** Covers a range of operating conditions specific to individual experimental files.<br><br>**Source:** [UFRJ Website](https://www02.smt.ufrj.br/~offshore/mfs/page_01.html) \| [Commonly Cited Paper (SBrT, 2017)](https://doi.org/10.14209/sbrt.2017.133) | ![MAFAULDA Test Rig](../images/MAFAULDA_testbench.png) |
 | :--- | :--- |
 
 ---
 
 ### PHM09 Gearbox
-* **Overview:** The basis for the 2009 PHM Society Data Challenge, this dataset focuses on a multi-stage gearbox, representing a more complex system where bearing faults are one of several possibilities.
+* **Overview:** The basis for the 2009 PHM Society Data Challenge, this dataset covers a multi-stage gearbox in which bearing faults are one of several fault types.
 * **Experimental Setup:** Data was collected from a generic industrial gearbox test rig with multiple shafts, gears, and bearings, including various gear and bearing fault conditions.
 * **Data Characteristics:** Data was collected synchronously from accelerometers and a tachometer, with a sampling frequency of 66.67 kHz.
 * **Operating Conditions:** Data was collected at five different shaft speeds under both high and low load conditions.
@@ -302,7 +302,7 @@ Bearing fault dataset from Lenze SE recorded only with signals already available
 
 ### Politecnico di Torino (ISED)
 
-* **Overview:** Addresses a specific gap in public data by focusing on medium-to-large-sized spherical roller bearings common in heavy industrial applications.
+* **Overview:** A dataset of medium-to-large spherical roller bearings of the type used in heavy industrial applications.
 * **Experimental Setup:** Data was collected by the ISED group on a medium/large-scale test rig (bearings up to 420 mm outer diameter) using SKF 22240 CCK/W33 spherical roller bearings. Localized defects (2 mm diameter, 0.5 mm deep) were introduced on the inner race, outer race, or a roller.
 * **Data Characteristics:** The dataset is multi-modal, containing vibration, temperature, and speed measurements in `.mat` format, organized into undamaged, inner race, outer race, and roller damage folders.
 * **Operating Conditions:** 10 nominal rotational speeds and four load conditions (one including axial load), plus some speed-ramp recordings.
@@ -314,7 +314,7 @@ Bearing fault dataset from Lenze SE recorded only with signals already available
 
 ### Politecnico di Torino (ISED) Multiple Defects
 
-* **Overview:** A follow-up to the ISED spherical roller bearing dataset with multiple simultaneous defects, for evaluating diagnostic models under more complex fault scenarios.
+* **Overview:** A follow-up to the ISED spherical roller bearing dataset with multiple simultaneous defects.
 * **Experimental Setup:** Same medium/large-scale ISED test rig and SKF 22240 CCK/W33 bearings. Three configurations: two inner race defects 180° apart on one bearing (2 mm and 1 mm diameter, 0.5 mm deep); an outer race defect on a second bearing combined with the dual inner race defects; and an outer race defect combined with a rolling-element defect on a second bearing.
 * **Data Characteristics:** Vibration, temperature, and speed measurements in `.mat` format.
 * **Operating Conditions:** 10 nominal rotational speeds and four load conditions (one including axial load), plus some speed-ramp recordings.
@@ -324,7 +324,7 @@ Bearing fault dataset from Lenze SE recorded only with signals already available
 
 ### German Aerospace Center (DLR)
 
-| **Overview:** A specialized dataset designed to support research into fault size estimation and prognosis, with a focus on aerospace-relevant bearings and operating conditions.<br><br>**Experimental Setup:** Data was collected using FAG axial ball bearings. Faults were seeded as fatigue spalls of various sizes to emulate realistic damage.<br><br>**Data Characteristics:** Contains 28 time-series vibration measurements, each sampled at 25.6 kHz.<br><br>**Operating Conditions:** Experiments were conducted under various combinations of rotational speed and high axial load to match aerospace conditions.<br><br>**Source:** [Mendeley Data](https://data.mendeley.com/datasets/chwhh9n3bf/1) \| [Publication (Data in Brief, 2023)](https://doi.org/10.1016/j.dib.2023.109019) | ![DLR Test Rig](../images/dlr_testbench.jpg) |
+| **Overview:** A dataset recorded for fault size estimation research, using axial ball bearings under operating conditions relevant to aerospace applications.<br><br>**Experimental Setup:** Data was collected using FAG axial ball bearings. Faults were seeded as fatigue spalls of various sizes.<br><br>**Data Characteristics:** Contains 28 time-series vibration measurements, each sampled at 25.6 kHz.<br><br>**Operating Conditions:** Experiments were conducted under various combinations of rotational speed and high axial load to match aerospace conditions.<br><br>**Source:** [Mendeley Data](https://data.mendeley.com/datasets/chwhh9n3bf/1) \| [Publication (Data in Brief, 2023)](https://doi.org/10.1016/j.dib.2023.109019) | ![DLR Test Rig](../images/dlr_testbench.jpg) |
 | :--- | :--- |
 
 ---
@@ -338,14 +338,14 @@ Bearing fault dataset from Lenze SE recorded only with signals already available
 
 ### Harbin Institute of Technology (HIT-SM)
 
-| **Overview:** A dataset explicitly designed for research into cross-domain fault diagnosis and transfer learning.<br><br>**Experimental Setup:** Composed of two sub-datasets from two physically different test rigs (SpectraQuest MFS and a self-built rig) with identical fault types and bearing models.<br><br>**Data Characteristics:** Contains vertical vibration signals collected at a sampling frequency of 51.2 kHz for both rigs.<br><br>**Operating Conditions:** For both test rigs, data was collected at three identical driving speeds: 600, 900, and 1200 RPM.<br><br>**Source:** [GitHub Repository](https://github.com/hitwzc/Bearing-datasets) \| [Publication (Meas. Sci. Technol., 2022)](https://doi.org/10.1088/1361-6501/ac7941) | ![HIT-SM Test Rigs](../images/HIT_spectraquest_testbench.jpg) |
+| **Overview:** A dataset recorded for cross-domain fault diagnosis and transfer learning research.<br><br>**Experimental Setup:** Composed of two sub-datasets from two physically different test rigs (SpectraQuest MFS and a self-built rig) with identical fault types and bearing models.<br><br>**Data Characteristics:** Contains vertical vibration signals collected at a sampling frequency of 51.2 kHz for both rigs.<br><br>**Operating Conditions:** For both test rigs, data was collected at three identical driving speeds: 600, 900, and 1200 RPM.<br><br>**Source:** [GitHub Repository](https://github.com/hitwzc/Bearing-datasets) \| [Publication (Meas. Sci. Technol., 2022)](https://doi.org/10.1088/1361-6501/ac7941) | ![HIT-SM Test Rigs](../images/HIT_spectraquest_testbench.jpg) |
 | :--- | :--- |
 
 ---
 
 ### Vishwakarma Institute of Technology (VIT)
 
-* **Overview:** A rolling-element bearing vibration dataset collected under controlled static load and motion conditions, providing precise vibration information for bearing health assessment and fault diagnosis.
+* **Overview:** A rolling-element bearing vibration dataset collected under controlled static load and motion conditions.
 * **Experimental Setup:** Data was collected from a test rig using an accelerometer sensor. Bearing conditions include healthy, inner race fault (IRF), and outer race fault (ORF). Each condition was tested with and without load at three different motor speeds.
 * **Data Characteristics:** Contains 50 files of vibration data, all sampled at 12 kHz over 6-second windows. Data is provided in MATLAB-compatible format via Mendeley.
 * **Operating Conditions:** Experiments were conducted at three rotational speeds (950, 1250, and 1950 RPM) under loaded and unloaded conditions.
@@ -355,7 +355,7 @@ Bearing fault dataset from Lenze SE recorded only with signals already available
 
 ### University of Arkansas (Single & Double Faults)
 
-* **Overview:** A vibration dataset explicitly designed for the classification of single and compound (simultaneous) faults in rotary machines, addressing a gap where most datasets cover only isolated fault scenarios.
+* **Overview:** A vibration dataset for classifying single and compound (simultaneous) faults in rotary machines.
 * **Experimental Setup:** Data was collected from a SpectraQuest fault simulator using accelerometers on bearing housings. Known faulty components include bearing inner raceway faults, outer raceway faults, and bent shaft conditions.
 * **Data Characteristics:** Contains 39 fault scenarios (38 single and double fault combinations plus 1 healthy baseline) at three different operating frequencies, for a total of 114 CSV files (about 15 GB). Each scenario was recorded 25 times by 8 piezoelectric accelerometers at 6,400 Hz for about 10 seconds.
 * **Operating Conditions:** Three shaft speeds, listed in the data record as 25, 50, and 75 "rpm". The paper does not give numeric values; on a SpectraQuest simulator these are most likely 25/50/75 Hz setpoints (1500/3000/4500 RPM).
@@ -365,7 +365,7 @@ Bearing fault dataset from Lenze SE recorded only with signals already available
 
 ### NUST ICE Journal Bearing
 
-* **Overview:** A unique dataset containing vibration signatures from main journal (sliding) bearings of an internal combustion engine, captured under diverse climatic and operating conditions. It is the only known public dataset targeting journal bearings in engines under environmental stress, expanding the scope of bearing diagnostics beyond rolling element bearings.
+* **Overview:** Vibration signatures from main journal (sliding) bearings of an internal combustion engine, recorded under different climatic and operating conditions.
 * **Experimental Setup:** A tri-axial accelerometer was mounted on the journal bearing housing of an internal combustion engine. The engine was exposed to various climatic conditions (temperature and humidity variations) following MIL-STD-810G, and tested at different engine rotation speeds inside a climatic and vibration chamber.
 * **Data Characteristics:** Comprises more than 500 files covering a range of climatic and operational conditions, including both healthy and faulty bearing states, with root mean square (RMS) values included.
 * **Operating Conditions:** The dataset includes variations in environmental temperature, humidity, and engine rotation speed, simulating real-world environmental conditions that affect bearing performance.
@@ -375,9 +375,9 @@ Bearing fault dataset from Lenze SE recorded only with signals already available
 
 ### BJTU-RAO Bogie Dataset
 
-* **Overview:** The first publicly available fault dataset for train bogie transmission systems, introduced as part of the 2024 Global Reliability and Prognostics and Health Management (PHM) Conference. The dataset covers a health state and 50 faulty states of subway train bogie transmission systems, making it one of the most comprehensive multi-class fault datasets available. While it extends beyond bearings to the broader drivetrain, bearing faults are a key component of the fault scenarios.
+* **Overview:** A fault dataset for subway train bogie transmission systems, introduced at the 2024 Global Reliability and Prognostics and Health Management (PHM) Conference. It covers 1 healthy state and 50 faulty states. While it extends beyond bearings to the broader drivetrain, bearing faults are a key component of the fault scenarios.
 * **Experimental Setup:** Data was acquired through fault simulation experiments on a subway train bogie transmission system test rig at Beijing Jiaotong University, in collaboration with the Rail Autonomous Operations (RAO) program.
-* **Data Characteristics:** Contains multi-sensor data streams covering 51 conditions (1 healthy + 50 faulty states), providing a rich and diverse benchmark for multi-class fault classification and transfer learning research.
+* **Data Characteristics:** Contains multi-sensor data streams covering 51 conditions (1 healthy + 50 faulty states), for multi-class fault classification and transfer learning research.
 * **Operating Conditions:** The dataset covers a wide variety of fault types and severities representative of real subway train operating scenarios.
 * **Source:** [Publication (IEEE Access, 2025, DOI: 10.1109/ACCESS.2025.3551603)](https://doi.org/10.1109/ACCESS.2025.3551603) | [Data (Google Drive, linked from community repositories, not verified against the paper)](https://drive.google.com/drive/folders/1RlZvFw-v07VvsL2Ni9cS7iFrTPDIhn2r)
 
@@ -403,7 +403,7 @@ Vibration data from a belt-driven rotating machinery fault simulator at the Ahra
 * **Sampling Rate:** 17.85 kHz
 * **Operating Conditions:** 1900 rpm constant; belt-driven rig (2:1 pulley), 0.5 hp motor
 * **License:** CC BY 4.0
-* **Caveats:** Small: 178 segments of about 0.2 s. One of the 9 classes is rotor unbalance rather than a bearing fault.
+* **Caveats:** 178 segments of about 0.2 s. One of the 9 classes is rotor unbalance rather than a bearing fault.
 * **Source:** [Mendeley](https://doi.org/10.17632/6x5s5hm6kr.1) \| [Publication](https://doi.org/10.1007/s00500-021-06307-x)
 
 ---
@@ -416,7 +416,7 @@ Machinery-fault-simulator test rig (motor, shaft on inboard and outboard bearing
 * **Sampling Rate:** 20.48 kHz
 * **Operating Conditions:** Constant 50 Hz shaft speed; variable-speed ramps through 14.2, 23.4 and 17.6 Hz; 10 s per test
 * **License:** CC BY 4.0
-* **Caveats:** Very small: 4 files of 10 s, healthy vs. outer race defect. Companion to the Tecnalia gearbox dataset.
+* **Caveats:** 4 files of 10 s: healthy and outer race defect. Companion to the Tecnalia gearbox dataset.
 * **Source:** [Mendeley](https://doi.org/10.17632/sp3fbf8d9y.1)
 
 ---
@@ -429,7 +429,7 @@ Two-stage test gearbox driven by a speed-controlled AC motor and loaded by a tor
 * **Sampling Rate:** 20.48 kHz
 * **Operating Conditions:** Stationary 1500 rpm / 70% load; speed ramp 840-1400-1000 rpm at 70% load; load ramp 20-80-50% at 1500 rpm; combined speed and load variation; 10 s per test
 * **License:** CC BY 4.0
-* **Caveats:** Gearbox-centred. Tests 9 and 13 (bearing fault under variable speed) are missing from the release. Sampling rate (20.48 kHz) is taken from the file headers.
+* **Caveats:** Conditions: healthy, broken gear tooth, bearing outer race fault, and combined gear and bearing fault. Tests 9 and 13 (bearing fault under variable speed) are missing from the release. Sampling rate (20.48 kHz) is taken from the file headers.
 * **Source:** [Mendeley](https://doi.org/10.17632/whj3wxhw8j.1)
 
 ---
@@ -455,14 +455,14 @@ Low-speed slewing bearing fault test data with one healthy slewing bearing and t
 * **Sampling Rate:** 50 kHz
 * **Operating Conditions:** 9 conditions: 2, 6, 12 rpm x overturning force 0, 30, 60 (labelled 'N')
 * **License:** CC BY 4.0
-* **Caveats:** Sampling rate (50 kHz) is taken from the time column. The channel described as acoustic emission is labelled in dB and may be a sound level.
+* **Caveats:** Sampling rate (50 kHz) is taken from the time column. The channel described as acoustic emission is labelled "AI 7 (dB)" in the files.
 * **Source:** [Mendeley (conditions 1–6)](https://doi.org/10.17632/hwg8v5j8t6.1) \| [Mendeley (conditions 7–9)](https://doi.org/10.17632/rcxgmdxhbr) \| [Publication](https://doi.org/10.12382/bgxb.2023.0756)
 
 ---
 
 ### VibroBox Bearing Datasets
 
-Five small Mendeley records from VibroBox R&D (Minsk). They cover vibration acceleration of a normal and an outer-ring-faulty ball bearing (analogous to 6213) on the same test stand, recorded as 96 kHz WAV files with a stud-mounted accelerometer. The records differ in speed regime: constant 973 rpm (40 signals), constant 800-900 rpm with the faulty bearing only (105 signals), constant 50-900 rpm (36), moderately varying speed around 650-975 rpm (44), and widely varying speed over 0-900 rpm with random, ramp and triangle profiles (79). The two varying-speed records include a synchronized tachometer signal as CSV.
+Five Mendeley records from VibroBox R&D (Minsk). They cover vibration acceleration of a normal and an outer-ring-faulty ball bearing (analogous to 6213) on the same test stand, recorded as 96 kHz WAV files with a stud-mounted accelerometer. The records differ in speed regime: constant 973 rpm (40 signals), constant 800-900 rpm with the faulty bearing only (105 signals), constant 50-900 rpm (36), moderately varying speed around 650-975 rpm (44), and widely varying speed over 0-900 rpm with random, ramp and triangle profiles (79). The two varying-speed records include a synchronized tachometer signal as CSV.
 
 * **Bearing:** Rolling ball bearing analogous to 6213 (the widely-varying-speed docx says only 'rolling ball bearing')
 * **Sampling Rate:** 96 kHz
@@ -577,7 +577,7 @@ Vibration data from a custom tapered roller bearing fault test rig at Vellore In
 * **Sampling Rate:** 12.8 kHz
 * **Operating Conditions:** 500, 700, and 1500 rpm
 * **License:** CC BY 4.0
-* **Caveats:** Folders are named "fault 1" to "fault 5" with no mapping to fault types in the record. No associated paper. Not related to the Vishwakarma Institute of Technology (VIT) dataset.
+* **Caveats:** Folders are named "fault 1" to "fault 5" with no mapping to fault types in the record. No associated paper. From a different institution than the Vishwakarma Institute of Technology (VIT) dataset.
 * **Source:** [Zenodo](https://doi.org/10.5281/zenodo.21679043)
 
 ---
@@ -590,7 +590,7 @@ A second experiment on the same Vellore Institute of Technology tapered roller b
 * **Sampling Rate:** 12.8 kHz
 * **Operating Conditions:** 900, 1100, 1300, and 1500 rpm
 * **License:** CC BY 4.0
-* **Caveats:** No associated paper. Not related to the Vishwakarma Institute of Technology (VIT) dataset.
+* **Caveats:** No associated paper. From a different institution than the Vishwakarma Institute of Technology (VIT) dataset.
 * **Source:** [Zenodo](https://doi.org/10.5281/zenodo.22109736)
 ---
 
@@ -615,7 +615,7 @@ Outer race defects machined by EDM with controlled entry and exit slopes (5°, 2
 * **Sampling Rate:** 25.6 kHz
 * **Operating Conditions:** Radial loads of 2.5, 5, and 10 kN; shaft speeds of 5, 7.5, 10, and 12.5 Hz
 * **License:** CC BY 4.0 (data); MIT (scripts, model)
-* **Caveats:** Version 1 of the 30° record is mis-titled "20Deg"; use version 2.
+* **Caveats:** Version 1 of the 30° record is titled "20Deg"; version 2 carries the 30° title.
 * **Source:** figshare: [5°](https://doi.org/10.6084/m9.figshare.4256594) \| [20°](https://doi.org/10.6084/m9.figshare.4264541) \| [30°](https://doi.org/10.6084/m9.figshare.4272353) \| [45°](https://doi.org/10.6084/m9.figshare.4272356) \| [90°](https://doi.org/10.6084/m9.figshare.4272440) \| [Scripts](https://doi.org/10.6084/m9.figshare.4272443) \| [Model](https://doi.org/10.6084/m9.figshare.5539213) \| [Publication (Structural Health Monitoring, 2021)](https://doi.org/10.1177/1475921720938296) \| [Model Publication](https://doi.org/10.1177/1475921720963950)
 
 ---
@@ -638,7 +638,7 @@ Vibration dataset for condition classification of ASTM C93900 bronze plain-beari
 * **Bearing:** ASTM C93900 bronze plain-bearing bushing (sliding bearing)
 * **Operating Conditions:** 7 configurations of focus/pair bushing condition and bearing position (left/right); 5 min acquisitions
 * **License:** CC BY 4.0
-* **Caveats:** Plain (sliding) bearing, not a rolling bearing. Sampling rate is not stated; file lengths suggest about 400 Hz.
+* **Caveats:** Plain (sliding) bearing, not a rolling bearing. Sampling rate is not stated; file lengths correspond to about 400 Hz.
 * **Source:** [Zenodo](https://doi.org/10.5281/zenodo.21383027) \| [Publication](https://doi.org/10.1109/OJIM.2026.3720860)
 
 ---
@@ -680,13 +680,13 @@ Acceleration signals from a bearing test bench at the University of Ferrara, rec
 
 ### UESTC Bearing Dataset
 
-Small laboratory bearing dataset from UESTC, released with a paper on one-class target-domain bearing fault detection. ASAHI UCPH20 bearings are tested in four states: normal, ball pit (3 mm x 5 mm), and wire-cut inner race and outer race faults (0.55 mm x 1 mm). A single-axis accelerometer is sampled at 20 kHz with no load at 800, 1000, 1200 and 1400 rpm, giving 80 .mat files.
+Laboratory bearing dataset from UESTC, released with a paper on one-class target-domain bearing fault detection. ASAHI UCPH20 bearings are tested in four states: normal, ball pit (3 mm x 5 mm), and wire-cut inner race and outer race faults (0.55 mm x 1 mm). A single-axis accelerometer is sampled at 20 kHz with no load at 800, 1000, 1200 and 1400 rpm, giving 80 .mat files.
 
 * **Bearing:** ASAHI UCPH20 (pillow-block unit)
 * **Sampling Rate:** 20 kHz
 * **Operating Conditions:** No load; 800, 1000, 1200, 1400 rpm
 * **License:** none stated (no licence file; README says the data are open-source for any bearing fault detection research, and publications must cite the paper)
-* **Caveats:** Small (80 files). How the ball defect was made is not stated. No licence file; the README allows research use with citation.
+* **Caveats:** 80 files. How the ball defect was made is not stated. No licence file; the README allows research use with citation.
 * **Source:** [GitHub](https://github.com/ChangLiu2024/UESTC-Bearing-Dataset) \| [Publication](https://doi.org/10.1109/JSEN.2025.3635217)
 ---
 
@@ -756,7 +756,7 @@ Triaxial vibration data from a motor-shaft-bearing rig with a 3-phase 0.25 HP mo
 * **Sampling Rate:** 1 kHz
 * **Operating Conditions:** 3-phase 0.25 HP AC motor, 1440 rpm, 50 Hz, 440 V; constant speed
 * **License:** CC BY-NC-SA 4.0
-* **Caveats:** Sampled at only 1 kHz. The reference paper is a method paper. Vibration counterpart of SUBF v2.0 (sound).
+* **Caveats:** Sampled at 1 kHz. The reference paper is a method paper. Vibration counterpart of SUBF v2.0 (sound).
 * **Source:** [Kaggle](https://www.kaggle.com/datasets/sumairaziz/subf-v1-0-dataset-bearing-fault-vibration-data) \| [Publication](https://doi.org/10.1016/j.measurement.2023.112871)
 ---
 
@@ -770,7 +770,7 @@ Triaxial vibration data from a motor-shaft-bearing rig with a 3-phase 0.25 HP mo
 
 ### FSTF Mechanical Laboratory
 
-| **Overview:** The FSTF Mechanical Laboratory dataset provides sound recordings of ball bearings under both normal and faulty conditions at different operating speeds. It is built on a rotor test rig and is intended to support research on acoustic-based bearing fault diagnosis. Sound is captured at positions proximal and distal to the bearing housings, offering a benchmark for audio-based machine diagnostics.<br><br>**Experimental Setup:** Experiments were conducted on a specialized rotor system (PT 500 with the PT 500.12 roller bearing faults kit from Gunt) equipped with SKF 6004 deep-groove ball bearings. Fault conditions include artificially induced localized defects on the inner race, outer race, and rolling element (ball), as well as a looseness defect resulting from prolonged operation (natural). Recordings were made at multiple operating speeds and at different sensor positions relative to the bearing housings.<br><br>**Data Characteristics:** The dataset is divided into two main categories: **Dataset 1**, consisting of recordings obtained using a stethoscope, and **Dataset 2**, consisting of recordings without a stethoscope under different operating conditions. In both cases, sound signals are acquired as `.wav` files using the **VibroTeak** mobile application (developed by the authors) at a sampling rate of **44.1 kHz**. The audio files are then imported into MATLAB (via `audioread`) for further processing.<br><br>**Operating Conditions:** Tests cover normal and faulty bearings over a range of rotational speeds and measurement configurations (proximal/distal to the housing, with/without stethoscope). This variability, combined with real acoustic background noise, makes the dataset well suited for developing and benchmarking robust diagnostic algorithms for rolling-element bearings using sound data.<br><br>**Source:** [Mendeley Data – Sound Datasets of a Rolling Element Bearing under Various Conditions](https://data.mendeley.com/datasets/n9y9c7xrz3/1) | ![FSTF Mechanical Lab Test Rig](../images/FSTF_Mechanical_Laboratory_Test_Rig.png) |
+| **Overview:** The FSTF Mechanical Laboratory dataset provides sound recordings of ball bearings under both normal and faulty conditions at different operating speeds. It is built on a rotor test rig and is intended to support research on acoustic-based bearing fault diagnosis. Sound is captured at positions proximal and distal to the bearing housings.<br><br>**Experimental Setup:** Experiments were conducted on a specialized rotor system (PT 500 with the PT 500.12 roller bearing faults kit from Gunt) equipped with SKF 6004 deep-groove ball bearings. Fault conditions include artificially induced localized defects on the inner race, outer race, and rolling element (ball), as well as a looseness defect resulting from prolonged operation (natural). Recordings were made at multiple operating speeds and at different sensor positions relative to the bearing housings.<br><br>**Data Characteristics:** The dataset is divided into two main categories: **Dataset 1**, consisting of recordings obtained using a stethoscope, and **Dataset 2**, consisting of recordings without a stethoscope under different operating conditions. In both cases, sound signals are acquired as `.wav` files using the **VibroTeak** mobile application (developed by the authors) at a sampling rate of **44.1 kHz**. The audio files are then imported into MATLAB (via `audioread`) for further processing.<br><br>**Operating Conditions:** Tests cover normal and faulty bearings over a range of rotational speeds and measurement configurations (proximal/distal to the housing, with/without stethoscope). Recordings include real acoustic background noise.<br><br>**Source:** [Mendeley Data – Sound Datasets of a Rolling Element Bearing under Various Conditions](https://data.mendeley.com/datasets/n9y9c7xrz3/1) | ![FSTF Mechanical Lab Test Rig](../images/FSTF_Mechanical_Laboratory_Test_Rig.png) |
 | :--- | :--- |
 
 ---
@@ -783,7 +783,7 @@ Acoustic dataset for bearing fault diagnosis under varying speed and load, recor
 * **Sampling Rate:** 32.768 kHz
 * **Operating Conditions:** 3 speeds (800, 1000, 1200 r/min) x 3 loads (0%, 15%, 30% of 6 N·m rated torque); 50 min continuous per condition
 * **License:** CC BY 4.0 (Mendeley records); Data in Brief article is CC BY-NC 4.0
-* **Caveats:** Files are in Brüel & Kjær .bkc format. The five Mendeley descriptions are copy-pasted; use the record titles for the fault class.
+* **Caveats:** Files are in Brüel & Kjær .bkc format. The five Mendeley records share the same description; the fault class is given in each record title.
 * **Source:** [Normal](https://doi.org/10.17632/j99rf8rsrz.1) \| [IR](https://doi.org/10.17632/w9d6g35kcy.1) \| [OR](https://doi.org/10.17632/g2kzkwnkgw.1) \| [Cage](https://doi.org/10.17632/jvv7p4wfgv.1) \| [IR+OR](https://doi.org/10.17632/bbvhrygxjz.1) \| [Publication](https://doi.org/10.1016/j.dib.2026.112919)
 
 ---
@@ -802,7 +802,7 @@ Acoustic bearing fault dataset recorded with a parabolic acoustic mirror mounted
 
 ### HB-Bearing (Real Background Noise)
 
-Audio dataset for motor bearing fault diagnosis and sound source separation in noisy, realistic conditions resembling a port coal-transport site. A Jinbiao YL601-4 motor at a fixed 1200 rpm drives a conveyor belt while several other motors run nearby, and background noise includes human voices and machinery. A consumer camera/recorder (Fluorite CS-C6Wi-3E4WFR) was placed 0.5 m above and 0.5 or 3 m horizontally from the faulty motor. The dataset has 13,500 clips of 4 s at 16 kHz covering normal, inner race, outer race, ball, and cage conditions.
+Audio dataset for motor bearing fault diagnosis and sound source separation with background noise resembling a port coal-transport site. A Jinbiao YL601-4 motor at a fixed 1200 rpm drives a conveyor belt while several other motors run nearby, and background noise includes human voices and machinery. A consumer camera/recorder (Fluorite CS-C6Wi-3E4WFR) was placed 0.5 m above and 0.5 or 3 m horizontally from the faulty motor. The dataset has 13,500 clips of 4 s at 16 kHz covering normal, inner race, outer race, ball, and cage conditions.
 
 * **Sampling Rate:** 16 kHz
 * **Operating Conditions:** Fixed 1200 rpm; Jinbiao YL601-4 motor driving a port coal conveyor belt as load; recorder 0.5 m vertical and 0.5 or 3 m horizontal from the faulty motor; several motors running at once with background human voices and machinery
@@ -819,14 +819,14 @@ Video dataset for non-contact condition monitoring of rotating machinery. 4K, 60
 * **Sampling Rate:** 60 fps video (4K)
 * **Operating Conditions:** 250-1000 RPM; varied camera distance, height and viewing angle; two rigs (Gunt PT500, Gunt TM170)
 * **License:** CC BY 4.0 (DataCite metadata); IEEE DataPort Standard Dataset, subscription required to download
-* **Caveats:** Only one of the four classes is a bearing fault. IEEE DataPort subscription required to download.
+* **Caveats:** One of the four classes is a bearing fault. IEEE DataPort subscription required to download.
 * **Source:** [IEEE DataPort](https://doi.org/10.21227/ps5a-xr36) \| [Publication](https://doi.org/10.5220/0013715900003982)
 
 ---
 
 ### DCASE Challenge Task 2 — Bearing
 
-The 'bearing' machine type in the DCASE Challenge Task 2 anomalous sound detection benchmarks (2022-2026, Hitachi and NTT). The machine is a real, small laboratory setup, not a toy: two ball bearings support a shaft driven by a spindle motor, recorded in an anechoic chamber, with real factory noise mixed in afterwards. Anomalies were produced by deliberately damaging the machine (in 2022, bearing eccentricity in two directions). Training data contain only normal clips; test sets have normal and anomalous 10 s clips at 16 kHz under domain shifts (rotation speed, microphone position, bearing model). In the 2026 edition the bearing data are marked '(Emu)', meaning emulated two-channel recordings made by convolving measured impulse responses with previously recorded machine sound and noise.
+The 'bearing' machine type in the DCASE Challenge Task 2 anomalous sound detection benchmarks (2022-2026, Hitachi and NTT). The machine is a laboratory setup rather than a toy model: two ball bearings support a shaft driven by a spindle motor, recorded in an anechoic chamber, with real factory noise mixed in afterwards. Anomalies were produced by deliberately damaging the machine (in 2022, bearing eccentricity in two directions). Training data contain only normal clips; test sets have normal and anomalous 10 s clips at 16 kHz under domain shifts (rotation speed, microphone position, bearing model). In the 2026 edition the bearing data are marked '(Emu)', meaning emulated two-channel recordings made by convolving measured impulse responses with previously recorded machine sound and noise.
 
 * **Bearing:** Two ball bearings supporting a shaft driven by a spindle motor (bearing models not stated; 2024 varies bearing product model)
 * **Sampling Rate:** 16 kHz (stated for 2022/MIMII DG; later records do not state it)
@@ -871,7 +871,7 @@ Multi-mode fault dataset from a 2.2 kW three-phase asynchronous motor (QABP-90L2
 * **Sampling Rate:** 12.8 kHz
 * **Operating Conditions:** 12 speed/load profiles: constant speed 1000/2000/3000 rpm with time-varying torque, and constant torque 20/40 Nm with time-varying speed; steady and transitional segments; 282 runs of 90 s
 * **License:** CC BY 4.0
-* **Caveats:** A related, probably overlapping Mendeley record (ZZU-MCC5, r3yycxfyjf) was published a week earlier by the same group.
+* **Caveats:** A related Mendeley record (ZZU-MCC5, r3yycxfyjf) with the same authors and sensors was published a week earlier.
 * **Source:** [Mendeley](https://doi.org/10.17632/6s3dggj9mw.2) \| [IEEE DataPort](https://doi.org/10.21227/gm72-j779) \| [Publication](https://doi.org/10.1016/j.dib.2026.112583)
 
 ---
@@ -936,7 +936,7 @@ Run-to-failure data from 8 endurance tests of oscillating needle bearings, two b
 
 ### Wind Turbine High-Speed Shaft Bearing
 
-Field vibration data from the high-speed shaft bearing of a 2 MW wind turbine, where an inner race fault developed over about 50 days (7 Mar - 25 Apr 2013). There is one 6 s acquisition per day at 97,656 Hz (585,936 samples), each with a tachometer pulse-time signal. The data was contributed by Eric Bechhoefer (Green Power Monitoring Systems) and redistributed by MathWorks for its Predictive Maintenance Toolbox example. It is a common small benchmark for prognostic health-indicator and RUL methods.
+Field vibration data from the high-speed shaft bearing of a 2 MW wind turbine, where an inner race fault developed over about 50 days (7 Mar - 25 Apr 2013). There is one 6 s acquisition per day at 97,656 Hz (585,936 samples), each with a tachometer pulse-time signal. The data was contributed by Eric Bechhoefer (Green Power Monitoring Systems) and redistributed by MathWorks for its Predictive Maintenance Toolbox example. It is used in prognostic health-indicator and RUL studies.
 
 * **Bearing:** High-speed shaft bearing of a 2 MW wind turbine gearbox (20-tooth pinion); model not stated
 * **Sampling Rate:** 97,656 Hz
@@ -949,10 +949,10 @@ Field vibration data from the high-speed shaft bearing of a 2 MW wind turbine, w
 ## Field and SCADA Data
 
 ### SCA Bearing Dataset
-* **Overview:** A unique resource containing vibration measurements of naturally occurring faults from an operational pulp mill, bridging the gap between laboratory and industrial environments.
+* **Overview:** Vibration measurements of naturally occurring faults from an operational pulp mill.
 * **Experimental Setup:** Data was collected from various machines between 2019 and 2022. The 11 cases include documented bearing failures and one confirmed non-bearing fault (shaft misalignment).
 * **Data Characteristics:** Raw vibration data in `.mat` format, with "train" files (healthy data) and "test" files (data leading to failure). Includes signals, timestamps, speed, and fault labels.
-* **Operating Conditions:** As the data is from a live industrial setting, operating conditions such as speed and load vary significantly.
+* **Operating Conditions:** As the data is from a live industrial setting, operating conditions such as speed and load vary.
 * **Source:** [Mendeley Data](https://data.mendeley.com/datasets/tdn96mkkpt/2) | [Publication (Data, 2023)](https://doi.org/10.3390/data8070115)
 
 ---
@@ -977,7 +977,7 @@ Benchmark for early fault detection in wind turbine SCADA data: 95 sub-datasets 
 * **Sampling Rate:** 10-min (avg, plus min/max/std for some signals)
 * **Operating Conditions:** 36 turbines in 3 wind farms (A: EDP onshore Portugal; B, C: anonymised offshore Germany); 95 sub-datasets, 89 turbine-years
 * **License:** CC BY-SA 4.0
-* **Caveats:** Only 6 of the 45 anomaly events are bearing-related.
+* **Caveats:** 6 of the 45 anomaly events are bearing-related.
 * **Source:** [Zenodo](https://doi.org/10.5281/zenodo.10958774) \| [Publication](https://doi.org/10.3390/data9120138)
 
 ---
@@ -1003,7 +1003,7 @@ Ultrasound scan images of bearings with white etching crack (WEC) subsurface dam
 * **Bearing:** Bearings in a laboratory test rig, two in parallel (type not stated)
 * **Operating Conditions:** Five tests under constant loading; each stopped when vibration exceeded a threshold (run times in hours given in file names)
 * **License:** CC BY-NC 4.0
-* **Caveats:** Small (26 images); no associated paper.
+* **Caveats:** 26 images; no associated paper.
 * **Source:** [Zenodo](https://doi.org/10.5281/zenodo.1162737)
 
 ---

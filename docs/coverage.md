@@ -23,25 +23,27 @@ DataCite searches by DOI prefix, with abstract-level screening:
 * **Curated lists:** [hustcxl/Rotating-machine-fault-data-set](https://github.com/hustcxl/Rotating-machine-fault-data-set), [dasolma/phmd](https://github.com/dasolma/phmd), CHAOZHAO-1/Machine-Fault-Dataset, and about 15 other GitHub dataset lists; the NASA PCoE data repository; PHM Society, PHME, and PHMAP data challenges.
 * **GitHub and Kaggle:** repository searches for bearing dataset terms (about 330 repositories screened), Kaggle dataset searches (about 120 datasets screened), and web searches for lab-hosted datasets.
 
+The searches were systematic but not exhaustive; datasets without a DOI or a public listing may have been missed.
+
 ## Notable Candidates Not Listed
 
-Candidates that were widely cited or mentioned by several sources, but did not meet the inclusion standard at the time of checking:
+Candidates that were cited in the literature or named by several sources, but did not meet the inclusion standard when checked. Status as of 26 September 2026; availability may have changed since. Authors can request a re-check through an issue.
 
 | Candidate | Reason |
 | :--- | :--- |
-| Fuhrländer FL2500 wind farm SCADA ([figshare](https://doi.org/10.6084/m9.figshare.25201631)) | Only threshold temperature alarms for bearings; no confirmed bearing failure |
-| University of Macau gearbox | Download only through a login-protected NAS or Baidu; no licence; bearing details undocumented |
-| KAIST AC motor testbed (Data in Brief, 2025) | Most Mendeley parts currently unavailable; re-deposits under embargo until 2027 |
-| AMPERE motor dataset (UBFC) | Single electrically eroded bearing state with no bearing details |
-| HUSTmotor multimodal | Bearing fault preset by the manufacturer, with no details |
-| CFD compound-fault dataset (Tsinghua) | Sampling rate, bearing, and operating conditions undocumented |
-| IIT Roorkee run-to-failure (Mendeley mxxphphny4) | Paper closed access; bearing, speed, and load could not be verified |
+| Fuhrländer FL2500 wind farm SCADA ([figshare](https://doi.org/10.6084/m9.figshare.25201631)) | Bearing information consists of temperature threshold alarms; no bearing failure is documented |
+| University of Macau gearbox | Available through a login-protected NAS or Baidu Netdisk; no licence stated; bearing model and defect sizes not stated |
+| KAIST AC motor testbed (Data in Brief, 2025) | 6 of the 7 Mendeley parts cited in the paper returned HTTP 404; re-deposited parts are under embargo until 15 February 2027 |
+| AMPERE motor dataset (UBFC) | One bearing state (electrically eroded); bearing model, position, and damage extent not stated |
+| HUSTmotor multimodal | Bearing fault described as preset by the manufacturer; fault type and size not stated |
+| CFD compound-fault dataset (Tsinghua) | Sampling rate, bearing type, fault generation method, and operating conditions not stated in the repository |
+| IIT Roorkee run-to-failure (Mendeley mxxphphny4) | Bearing type, speed, and load not stated in the record; the paper is not open access |
 | KAIST vertical motor-pump journal bearing (Mendeley x2hrn4vfrt) | Data paper not yet published; institution and units not stated |
-| Roller fault signals (Mendeley 7w5cstbz3c) | Only two short signals and no healthy baseline, despite a highly cited method paper |
+| Roller fault signals (Mendeley 7w5cstbz3c) | Contains two roller-fault signals and no healthy recording |
 | Shandong Normal University cross-speed (Zenodo 22170309) | No paper; rig, bearing, and fault method not stated |
 | St Petersburg motor startup modes (Zenodo 21325944) | Record restricted, no public files |
-| GPNU (IEEE DataPort) | No files uploaded |
-| QIT-Bearing, SLIET NU205E, BEED (IEEE DataPort) | Subscription-only, partial, or access-denied releases |
+| GPNU (IEEE DataPort) | No data files available on the record |
+| QIT-Bearing, SLIET NU205E, BEED (IEEE DataPort) | QIT-Bearing: partial release, subscription required; SLIET NU205E: page returned "Access denied"; BEED: partial release |
 | SUDA, SJTU, SCP pump, Donghua spinning frame, iFLYTEK challenge | No public copy of the data found |
 
 Suggestions for datasets that are missing, or that now meet the standard, are welcome through an issue or pull request.
