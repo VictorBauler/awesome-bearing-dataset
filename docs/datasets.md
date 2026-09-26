@@ -247,6 +247,57 @@ Condition-monitoring data from two induction-motor-driven centrifugal pumps (VFD
 * **Source:** [4TU.ResearchData](https://doi.org/10.4121/2b61183e-c14f-4131-829b-cc4822c369d0) \| [Publication](https://doi.org/10.1016/j.dib.2023.109987)
 ---
 
+### Siemens 2 MW Wind Turbine SCADA
+
+Thirty days (November 2012) of 10-minute SCADA data from one 2 MW Siemens wind turbine drivetrain on the Baltic coast of northern Poland. It has 12 parameters: wind, rotor and generator speed, active and reactive power, generator voltage and current, gearbox temperature and two generator temperatures. A gearbox bearing failure was recorded on 9 Nov 2012 at 13:00, so the data covers normal operation and the period before the fault. The data has been used in a series of papers on cointegration and stationarity-based fault detection.
+
+* **Bearing:** Gearbox bearing (position not specified); SCADA column is 'Gearbox temperature'
+* **Sampling Rate:** 10-min averages
+* **Operating Conditions:** One 2 MW Siemens turbine; 1-30 Nov 2012; 4,320 samples, 12 parameters
+* **License:** CC BY 4.0
+* **Caveats:** A single gearbox bearing failure (9 Nov 2012), stage not given; no label column.
+* **Source:** [Mendeley](https://doi.org/10.17632/3sys4562ny) \| [Publication](https://doi.org/10.1016/j.renene.2017.06.089)
+
+---
+
+### UOEMD-VAFCVS
+
+Induction-motor fault dataset from the University of Ottawa, recorded on a modified SpectraQuest Machinery Fault Simulator with eight 3 HP Marathon D396 motors, one healthy and seven each carrying one SpectraQuest-made fault. Classes are healthy, rotor unbalance, misalignment, stator winding fault, voltage unbalance/single phasing, bowed rotor, broken rotor bars and faulty bearings. Three accelerometers, a microphone and a temperature sensor are sampled at 42 kHz for 10 s. Runs cover four constant speeds (15-60 Hz) and four speed ramps, unloaded and loaded (128 recordings).
+
+* **Bearing:** 6205 (motor bearings, Marathon Electric D396); faulty-bearing defect type not stated
+* **Sampling Rate:** 42 kHz
+* **Operating Conditions:** Constant 15/30/45/60 Hz; ramps 15-45, 30-60, 45-15, 60-30 Hz; unloaded and loaded (bolted disk); 10 s per file
+* **License:** CC BY 4.0
+* **Caveats:** Each fault class is a different physical motor, so motor identity is confounded with the label.
+* **Source:** [Mendeley](https://doi.org/10.17632/msxs4vj48g.2) \| [Publication](https://doi.org/10.1016/j.dib.2024.110144)
+
+---
+
+### URMA-CRTI
+
+Vibration data from the bearing test bench of the CRTI research unit in Annaba, Algeria (formerly URMA). A 0.37 kW induction motor driven by a Lenze variable-speed drive runs with the tested bearing on the drive side; three ICP accelerometers (CTC AC140-2D, 100 mV/g) record the signals. The bearing states are healthy, outer race, inner race, ball and combined faults, recorded at supply frequencies from 30 to 50 Hz, for 10 s at 25.6 kHz, in one MATLAB file.
+
+* **Bearing:** Deep groove ball bearing ER12K (per related paper)
+* **Sampling Rate:** 25.6 kHz
+* **Operating Conditions:** 0.37 kW three-phase induction motor; VFD supply frequencies 30, 35, 40, 45, 50 Hz; 10 s per condition
+* **License:** CC BY 4.0
+* **Source:** [Zenodo](https://doi.org/10.5281/zenodo.19109149) \| [Publication](https://doi.org/10.1007/s00170-019-04726-7)
+
+---
+
+### Lenze-MB
+
+Bearing fault dataset from Lenze SE recorded only with signals already available in an industrial drive: a Lenze i950 inverter feeding a PMSM with a SinCos encoder. Test bearings (FAG NU2205 cylindrical roller) sit in pedestals on the driven shaft, with a belt-coupled load machine applying radial force and load torque. Classes are healthy, five levels of inner-ring pitting and one heavy artificial inner-ring defect. Phase currents and voltages, DC-bus voltage, encoder angle and speed are logged at 16 kHz at four speeds (900-1500 rpm), two load torques and two belt tensions.
+
+* **Bearing:** FAG NU2205-E-XL-TVP2 (cylindrical roller bearing)
+* **Sampling Rate:** 16 kHz
+* **Operating Conditions:** Speeds 900/1000/1375/1500 rpm; load torque 0 or 2 Nm; belt tension 250 or 500 N (stated as Nm) giving radial load; 112 measurements
+* **License:** CC BY-NC 4.0
+* **Caveats:** Bearing faults only (no other motor faults); no external sensors.
+* **Source:** [Zenodo](https://doi.org/10.5281/zenodo.14762422) \| [Publication](https://doi.org/10.1016/j.engappai.2023.106834)
+
+---
+
 ## Diagnosis — Vibration (Laboratory)
 
 ### Politecnico di Torino (ISED)
@@ -506,18 +557,6 @@ Isolated outer race, inner race, and rolling-element defects, each at four sever
 * **Source:** [Zenodo](https://doi.org/10.5281/zenodo.8241763) \| [Publication (Mathematics, 2023)](https://doi.org/10.3390/math11163498)
 ---
 
-### URMA-CRTI
-
-Vibration data from the bearing test bench of the CRTI research unit in Annaba, Algeria (formerly URMA). A 0.37 kW induction motor driven by a Lenze variable-speed drive runs with the tested bearing on the drive side; three ICP accelerometers (CTC AC140-2D, 100 mV/g) record the signals. The bearing states are healthy, outer race, inner race, ball and combined faults, recorded at supply frequencies from 30 to 50 Hz, for 10 s at 25.6 kHz, in one MATLAB file.
-
-* **Bearing:** Deep groove ball bearing ER12K (per related paper)
-* **Sampling Rate:** 25.6 kHz
-* **Operating Conditions:** 0.37 kW three-phase induction motor; VFD supply frequencies 30, 35, 40, 45, 50 Hz; 10 s per condition
-* **License:** CC BY 4.0
-* **Source:** [Zenodo](https://doi.org/10.5281/zenodo.19109149) \| [Publication](https://doi.org/10.1007/s00170-019-04726-7)
-
----
-
 ### ISAC Lab Bearing and Unbalance
 
 Vibration dataset from a rotating-machine test rig at the Intelligent Systems and Advanced Control Lab, University of Guilan. It covers healthy operation, outer race and ball faults (a defective bearing placed in each of three bearing positions) and unbalance on six disks, recorded by six sensors at 10 kHz. Healthy data were taken at shaft frequencies of 10-50 Hz and fault data at 10 and 30 Hz; startup and shutdown recordings for noise estimation are also included.
@@ -724,7 +763,7 @@ Triaxial vibration data from a motor-shaft-bearing rig with a 3-phase 0.25 HP mo
 ## Diagnosis — Acoustic and Non-Contact
 
 ### SUBF v2.0 Dataset: Bearing Faults Sound Data
-| **Overview:**  This dataset is an audio-based benchmark for rolling bearings fault diagnosis. It contains machine sound recordings from an induction-motor test rig under three bearing health conditons (healthy, inner race fault, outer race fault).<br><br>**Experimental Setup:** The dataset was created on an in-house test rig at the University of Engineering and Technology Taxila, which consisted of a 3-phase 0.25 HP, 50 Hz induction motor running at 1440 RPM, driving a shaft supported by two bearings. The bearing on the left side of the shaft was swapped between healthy, inner race fault, and outer race fault units. A low-cost omnidirectional condenser microphone (BOYA BY-M1) was positioned close to the test bearing, connected to a laptop used for data recording.<br><br>**Data Characteristics:** Contains a total of 18 hours of machine sounds recorded at a sampling frequency of 10 kHz, with 6 hours for each health class (healthy, IR, OR). Each continuous 1-hour run was segmented into non-overlapping 10 second clips, creating 2160 signals per health condition (6480 clips in total).<br><br>**Operating Conditions:** All recordings were taken at nominally constant speed (1440 RPM) under steady supply conditions, with no deliberate variation in load or speed. Faults correspond to localized inner-race and outer-race defects seeded in one bearing, while the other bearing remains healthy, ensuring that class differences are dominated by the target bearing condition.<br><br>**Source:** [Kaggle – SUBF v2.0 Dataset: Bearing Faults Sound Data](https://www.kaggle.com/datasets/sumairaziz/subf-v2-0-dataset-bearing-faults-sound-data/data) \| [Publication (Digital Signal Processing, 2025)](https://doi.org/10.1016/j.dsp.2024.104776) | ![SUBF v 2.0 Test Rig](../images/SUBF_v2_0_Dataset_testbench.jpg) |
+| **Overview:**  This dataset is an audio-based benchmark for rolling bearings fault diagnosis. It contains machine sound recordings from an induction-motor test rig under three bearing health conditions (healthy, inner race fault, outer race fault).<br><br>**Experimental Setup:** The dataset was created on an in-house test rig at the University of Engineering and Technology Taxila, which consisted of a 3-phase 0.25 HP, 50 Hz induction motor running at 1440 RPM, driving a shaft supported by two bearings. The bearing on the left side of the shaft was swapped between healthy, inner race fault, and outer race fault units. A low-cost omnidirectional condenser microphone (BOYA BY-M1) was positioned close to the test bearing, connected to a laptop used for data recording.<br><br>**Data Characteristics:** Contains a total of 18 hours of machine sounds recorded at a sampling frequency of 10 kHz, with 6 hours for each health class (healthy, IR, OR). Each continuous 1-hour run was segmented into non-overlapping 10 second clips, creating 2160 signals per health condition (6480 clips in total).<br><br>**Operating Conditions:** All recordings were taken at nominally constant speed (1440 RPM) under steady supply conditions, with no deliberate variation in load or speed. Faults correspond to localized inner-race and outer-race defects seeded in one bearing, while the other bearing remains healthy, ensuring that class differences are dominated by the target bearing condition.<br><br>**Source:** [Kaggle – SUBF v2.0 Dataset: Bearing Faults Sound Data](https://www.kaggle.com/datasets/sumairaziz/subf-v2-0-dataset-bearing-faults-sound-data/data) \| [Publication (Digital Signal Processing, 2025)](https://doi.org/10.1016/j.dsp.2024.104776) | ![SUBF v 2.0 Test Rig](../images/SUBF_v2_0_Dataset_testbench.jpg) |
 | :--- | :--- |
 
 ---
@@ -837,19 +876,6 @@ Multi-mode fault dataset from a 2.2 kW three-phase asynchronous motor (QABP-90L2
 
 ---
 
-### UOEMD-VAFCVS
-
-Induction-motor fault dataset from the University of Ottawa, recorded on a modified SpectraQuest Machinery Fault Simulator with eight 3 HP Marathon D396 motors, one healthy and seven each carrying one SpectraQuest-made fault. Classes are healthy, rotor unbalance, misalignment, stator winding fault, voltage unbalance/single phasing, bowed rotor, broken rotor bars and faulty bearings. Three accelerometers, a microphone and a temperature sensor are sampled at 42 kHz for 10 s. Runs cover four constant speeds (15-60 Hz) and four speed ramps, unloaded and loaded (128 recordings).
-
-* **Bearing:** 6205 (motor bearings, Marathon Electric D396); faulty-bearing defect type not stated
-* **Sampling Rate:** 42 kHz
-* **Operating Conditions:** Constant 15/30/45/60 Hz; ramps 15-45, 30-60, 45-15, 60-30 Hz; unloaded and loaded (bolted disk); 10 s per file
-* **License:** CC BY 4.0
-* **Caveats:** Each fault class is a different physical motor, so motor identity is confounded with the label.
-* **Source:** [Mendeley](https://doi.org/10.17632/msxs4vj48g.2) \| [Publication](https://doi.org/10.1016/j.dib.2024.110144)
-
----
-
 ### IM-VACD (Smartphone)
 
 Smartphone-recorded induction-motor fault dataset from the University of Ottawa, using the same eight SpectraQuest-faulted Marathon D396 motors as UOEMD. Classes are healthy, rotor unbalance, misalignment, stator winding fault, voltage unbalance, bowed rotor, broken rotor bars and faulty bearings. Triaxial accelerometer (100-490 Hz depending on device) and microphone audio were recorded with an iPhone 13, Samsung Galaxy S6 and Galaxy A50. Runs cover constant speeds of 15-30 Hz, unloaded and loaded, 10 s each.
@@ -859,19 +885,6 @@ Smartphone-recorded induction-motor fault dataset from the University of Ottawa,
 * **License:** CC BY 4.0
 * **Caveats:** Each fault class is a different physical motor. The record states 42 kHz acoustic, but the file checked was 48 kHz.
 * **Source:** [Mendeley](https://doi.org/10.17632/yc8yhg5xjd.2) \| [Publication](https://doi.org/10.1016/j.ymssp.2026.114922)
-
----
-
-### Lenze-MB
-
-Bearing fault dataset from Lenze SE recorded only with signals already available in an industrial drive: a Lenze i950 inverter feeding a PMSM with a SinCos encoder. Test bearings (FAG NU2205 cylindrical roller) sit in pedestals on the driven shaft, with a belt-coupled load machine applying radial force and load torque. Classes are healthy, five levels of inner-ring pitting and one heavy artificial inner-ring defect. Phase currents and voltages, DC-bus voltage, encoder angle and speed are logged at 16 kHz at four speeds (900-1500 rpm), two load torques and two belt tensions.
-
-* **Bearing:** FAG NU2205-E-XL-TVP2 (cylindrical roller bearing)
-* **Sampling Rate:** 16 kHz
-* **Operating Conditions:** Speeds 900/1000/1375/1500 rpm; load torque 0 or 2 Nm; belt tension 250 or 500 N (stated as Nm) giving radial load; 112 measurements
-* **License:** CC BY-NC 4.0
-* **Caveats:** Bearing faults only (no other motor faults); no external sensors.
-* **Source:** [Zenodo](https://doi.org/10.5281/zenodo.14762422) \| [Publication](https://doi.org/10.1016/j.engappai.2023.106834)
 
 ---
 
@@ -953,19 +966,6 @@ Condition monitoring data from a 750 W direct-drive wind turbine running outdoor
 * **Operating Conditions:** 750 W direct-drive small wind turbine on a building roof in Darmstadt; open-air operation with variable wind and rotor speed
 * **License:** CC BY 4.0
 * **Source:** [Zenodo](https://doi.org/10.5281/zenodo.11820597) \| [Publication](https://doi.org/10.1038/s41597-024-03934-5)
-
----
-
-### Siemens 2 MW Wind Turbine SCADA
-
-Thirty days (November 2012) of 10-minute SCADA data from one 2 MW Siemens wind turbine drivetrain on the Baltic coast of northern Poland. It has 12 parameters: wind, rotor and generator speed, active and reactive power, generator voltage and current, gearbox temperature and two generator temperatures. A gearbox bearing failure was recorded on 9 Nov 2012 at 13:00, so the data covers normal operation and the period before the fault. The data has been used in a series of papers on cointegration and stationarity-based fault detection.
-
-* **Bearing:** Gearbox bearing (position not specified); SCADA column is 'Gearbox temperature'
-* **Sampling Rate:** 10-min averages
-* **Operating Conditions:** One 2 MW Siemens turbine; 1-30 Nov 2012; 4,320 samples, 12 parameters
-* **License:** CC BY 4.0
-* **Caveats:** A single gearbox bearing failure (9 Nov 2012), stage not given; no label column.
-* **Source:** [Mendeley](https://doi.org/10.17632/3sys4562ny) \| [Publication](https://doi.org/10.1016/j.renene.2017.06.089)
 
 ---
 
