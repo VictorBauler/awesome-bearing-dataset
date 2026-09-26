@@ -165,6 +165,88 @@ Detailed descriptions of the datasets listed in the [README](../README.md#summar
 
 ---
 
+### SDUST Bearing and Gear
+
+Bearing and planetary-gearbox fault data from a transmission fault-implantation test rig at Shandong University of Science and Technology. The bearing subset uses 6205 bearings in 10 states: normal, plus inner race, outer race and rolling element faults at 0.2, 0.4 and 0.6 mm. It covers six constant speeds (1000-3000 rpm), three speed-varying ranges (800-1500, 1000-2000 and 1500-2500 rpm) and four load levels (0-60). Two triaxial accelerometers (6 channels) record 40 s at 25.6 kHz with an LMS Test.Lab system. A gear subset with planet and sun gear pitting, crack and wear faults is included.
+
+* **Bearing:** 6205 deep groove ball bearing
+* **Sampling Rate:** 25.6 kHz
+* **Operating Conditions:** Constant speeds 1000/1500/1800/2000/2500/3000 rpm and time-varying speeds 800-1500, 1000-2000, 1500-2500 rpm; loads 0/20/40/60 (N per the dataset PDF); 40 s records
+* **License:** none stated (no licence in GitHub repo; the dataset PDF says the data are public and anyone may use them to verify diagnosis algorithms, citing the listed papers)
+* **Caveats:** No dataset paper; the repository asks users to cite the group's method papers (the first one is linked). No licence stated.
+* **Source:** [GitHub](https://github.com/JRWang-SDUST/SDUST-Dataset) \| [Publication](https://doi.org/10.1016/j.knosys.2023.111285)
+---
+
+### HIT Inter-Shaft Bearing (Aero-Engine)
+
+Inter-shaft bearing fault data from a test rig built around a real dual-rotor aero-engine driven by LP and HP motors, rather than from a bearing test bench. Three bearings with wire-cut faults (one outer ring, two inner ring sizes) and a healthy bearing were fitted in turn and run at 28 LP/HP speed combinations (LP 1000-5000 r/min, HP 1200-6000 r/min). Six channels are recorded at 25 kHz: two eddy-current displacement sensors on the LP rotor and four accelerometers on the casings, supplied as 20,480-point segments with speed and label columns.
+
+* **Bearing:** Aero-engine inter-shaft bearing (15 rolling elements, 7.5 mm; 30 mm inner / 65 mm outer ring diameter; model not stated)
+* **Sampling Rate:** 25 kHz
+* **Operating Conditions:** 28 low/high-pressure rotor speed combinations (LP 1000-5000 r/min, HP 1200-6000 r/min, speed ratio 1.2-1.8)
+* **License:** none stated (no licence in GitHub repo or on the Google Drive folder; the paper itself is CC BY 4.0)
+* **Caveats:** The GitHub repository holds only channel 1 as train/test splits; the full data (all channels) are in the Google Drive folder linked from the repository. No data licence stated. Distinct from the HIT-SM dataset.
+* **Source:** [GitHub](https://github.com/HouLeiHIT/HIT-dataset) \| [Publication](https://doi.org/10.37965/jdmd.2023.314)
+---
+
+### MCC5-THU Gearbox
+
+Vibration dataset from a two-stage parallel gearbox driven by a 2.2 kW induction motor, loaded by a magnetic powder brake, recorded under time-varying speed and time-varying load. States include healthy, five gear faults (missing tooth, wear, pitting, crack, break) and two compound faults combining a broken tooth with an inner- or outer-race fault (0.1/0.3/0.5 mm) on the ER16K intermediate-shaft bearing. Each of the 240 CSV files holds 60 s of triaxial vibration at the motor drive end and gearbox intermediate-shaft bearing seat, plus input torque and a key-phase speed signal, sampled at 12.8 kHz.
+
+* **Bearing:** ER16K deep-groove ball bearing (intermediate-shaft support bearing; 9 balls, 0.3125 in ball dia., 1.516 in pitch dia.)
+* **Sampling Rate:** 12.8 kHz
+* **Operating Conditions:** Time-varying speed (0-1000/2000/3000 rpm profiles at 10 or 20 Nm) and time-varying load (0-10/20 Nm at 1000/2000/3000 rpm); 60 s per file
+* **License:** CC BY 4.0
+* **Caveats:** Bearing faults appear only combined with gear tooth breakage (2 of 8 fault types); there is no bearing-only class. Sibling of the MCC5-THU Motor dataset.
+* **Source:** [Mendeley](https://doi.org/10.17632/p92gj2732w.2) \| [Publication](https://doi.org/10.1016/j.dib.2024.110453)
+---
+
+### SUSU Shaft-Mounted Wireless Sensor
+
+Bearing fault data recorded with a wireless acceleration sensor mounted directly on the rotating shaft, measuring both linear and angular acceleration. The test rig has a 1-inch shaft on two ER-16K bearings driven by an AC motor. Five test bearings were used: healthy, inner race, outer race, ball, and one with all three faults, with damage made by a rotary tool. Signals are sampled at 31.175 kHz at 1200 rpm (20 Hz), and the repository adds an 18 Hz set.
+
+* **Bearing:** ER-16K (MB Manufacturing), 1-inch shaft
+* **Sampling Rate:** 31.175 kHz
+* **Operating Conditions:** 1200 rpm (20 Hz) as described in the paper; the repo also contains an 18 Hz set
+* **License:** none stated (no licence in GitHub repo)
+* **Caveats:** The repository also contains an 18 Hz subset that is not described in the paper or README. No licence stated.
+* **Source:** [GitHub](https://github.com/SUSU-CM/Bearings-dataset) \| [Publication](https://doi.org/10.1016/j.ymssp.2022.109454)
+---
+
+### NEEPU Bearing Dataset
+
+Bearing vibration data released with the paper 'You can get smaller' (Advanced Engineering Informatics, 2023) from Northeast Electric Power University. Seven classes: healthy, inner race, outer race and ball faults, plus the compound ball+outer, ball+inner and outer+inner faults. Race faults are 1.0 mm wide x 0.3 mm deep gaps and ball faults are 1.0 mm x 0.3 mm holes. Four load levels (0-0.3 N·m) are applied by a magnetic brake. The data are the sensor voltage signals divided by 5, supplied as a single .mat file.
+
+* **Operating Conditions:** Loads 0.0, 0.1, 0.2, 0.3 N·m applied by a magnetic brake
+* **License:** Unknown (as set on Kaggle)
+* **Caveats:** Uploaded to Kaggle by a paper co-author; Kaggle licence "Unknown". The paper is closed access, so sampling rate and bearing type could not be verified.
+* **Source:** [Kaggle](https://www.kaggle.com/datasets/fushangdaren/bearing-dataset-of-you-can-get-smaller) \| [Publication](https://doi.org/10.1016/j.aei.2023.101890)
+---
+
+### SQ Variable-Speed Bearing (SQV)
+
+Vibration data for bearing fault diagnosis under continuously varying speed, recorded on a SpectraQuest machinery fault simulator. The test bearing is an NSK 6203 at the motor drive end. Seven health states: normal, plus inner race and outer race single-point defects at three severity levels. Each record covers a full run-up from standstill to 3000 rpm, a hold and a run-down to 0 rpm. Vibration and a speed-pulse channel are recorded at 25.6 kHz with a CoCo-80 analyser.
+
+* **Bearing:** NSK 6203 (motor drive end)
+* **Sampling Rate:** 25.6 kHz
+* **Operating Conditions:** Continuous speed variation: run-up from standstill to 3000 rpm, hold, run-down to 0, controlled by hand; 6-9 repeated runs per class
+* **License:** none stated (no licence in GitHub repo)
+* **Caveats:** The paper is closed access; the files were recorded in 2015. No licence stated.
+* **Source:** [GitHub](https://github.com/shenliuuu/SQ-dataset-with-variable-speed-for-fault-diagnosis) \| [Publication](https://doi.org/10.1016/j.ymssp.2022.110071)
+---
+
+### NLN-EMP Navy E-Motor Pump
+
+Condition-monitoring data from two induction-motor-driven centrifugal pumps (VFD-fed) at Fieldlab Techport, IJmuiden, collected by the Royal Netherlands Navy. One fault is present at a time; bearing faults on the 4-pole set include motor NDE outer- and inner-race defects (1, 2 or 3 milled axial lines, 1 mm wide x 350 um deep) at three severities, a damaged rolling element, grease contaminated with iron filings, and a pump NDE outer-race defect, alongside electrical, alignment, unbalance, impeller, coupling and cavitation faults. Five single-axis accelerometers on the motor and pump bearing housings and three-phase current and voltage are recorded at 20 kHz. Set 2 runs at 50, 75 and 100% of rated speed and set 4 at 70%.
+
+* **Bearing:** Deep groove ball bearings: motor 2 NDE 6309.C4 (motor faults); pump 2 NDE 6308.2Z.C3 (pump fault). Other set-up: motor 6310.C4, pump 6306.2Z.C3
+* **Sampling Rate:** 20 kHz (vibration and current/voltage)
+* **Operating Conditions:** Motor-pump set 2 (11 kW, 4-pole) at 50/75/100% rated speed; set 4 (22 kW, 2-pole) at 70% only; VFD-driven; fresh-water circuit
+* **License:** CC0 1.0
+* **Caveats:** Faults were induced on industrial-size pumps at a field lab; they are not natural field failures. Bearing faults are one group among about 11 fault classes.
+* **Source:** [4TU.ResearchData](https://doi.org/10.4121/2b61183e-c14f-4131-829b-cc4822c369d0) \| [Publication](https://doi.org/10.1016/j.dib.2023.109987)
+---
+
 ## Diagnosis — Vibration (Laboratory)
 
 ### Politecnico di Torino (ISED)
@@ -327,17 +409,16 @@ Low-speed slewing bearing fault test data with one healthy slewing bearing and t
 
 ---
 
-### Bearing 6213 Healthy vs. Compound Fault
+### VibroBox Bearing Datasets
 
-Forty vibration acceleration recordings of a rolling bearing equivalent to a 6213, all at 973 rpm. Twenty are from a healthy bearing and twenty from a bearing with a severe outer ring defect and an incipient inner ring defect. The signals were recorded at 96 kHz with a stud-mounted B&R accelerometer and are provided as 10 s WAV files.
+Five small Mendeley records from VibroBox R&D (Minsk). They cover vibration acceleration of a normal and an outer-ring-faulty ball bearing (analogous to 6213) on the same test stand, recorded as 96 kHz WAV files with a stud-mounted accelerometer. The records differ in speed regime: constant 973 rpm (40 signals), constant 800-900 rpm with the faulty bearing only (105 signals), constant 50-900 rpm (36), moderately varying speed around 650-975 rpm (44), and widely varying speed over 0-900 rpm with random, ramp and triangle profiles (79). The two varying-speed records include a synchronized tachometer signal as CSV.
 
-* **Bearing:** Analogue of 6213 (deep groove ball bearing)
+* **Bearing:** Rolling ball bearing analogous to 6213 (the widely-varying-speed docx says only 'rolling ball bearing')
 * **Sampling Rate:** 96 kHz
-* **Operating Conditions:** 973 rpm constant
+* **Operating Conditions:** fbf6y8m4mv: 973 rpm constant. vjzrrzm5wm: constant speed per record, 800-900 rpm in 5 rpm steps. ryg9rrkgv8: constant 50-900 rpm in 50 rpm steps. j66x27t229: moderate ramps (+/-1-10 rpm) from 650-975 rpm starting speeds. 6k6fbzc6vv: wide variation 0-900 rpm (random, linear up/down, triangle profiles)
 * **License:** CC BY 4.0
-* **Caveats:** No rig or load description; whether the damage is natural or artificial is not stated.
-* **Source:** [Mendeley](https://doi.org/10.17632/fbf6y8m4mv.1)
-
+* **Caveats:** No paper; how the fault was made and whether it is natural or artificial is not stated.
+* **Source:** [Constant 973 rpm](https://doi.org/10.17632/fbf6y8m4mv.1) \| [Constant 800–900 rpm](https://doi.org/10.17632/vjzrrzm5wm.1) \| [Constant 50–900 rpm](https://doi.org/10.17632/ryg9rrkgv8.1) \| [Moderate ramps](https://doi.org/10.17632/j66x27t229.1) \| [Widely varying 0–900 rpm](https://doi.org/10.17632/6k6fbzc6vv.1)
 ---
 
 ### Army Engineering University of PLA, Mixed Bearing–Gearbox
@@ -535,6 +616,111 @@ Laboratory data from a proportionally scaled wind turbine pitch bearing (408 x 2
 
 ---
 
+### HDU PT500 Compound Faults
+
+Bearing single and compound fault data from a bearing fault test platform at Hangzhou Dianzi University, built to study compound-fault diagnosis. Ten states: normal, inner race, outer race, ball and cage faults, plus five compound faults (IF&OF, IF&BF, IF&CF, OF&BF, IF&OF&BF). Each state is recorded at 1000 rpm under seven loads (0-1200 N) and at 600 N under seven speeds (400-1600 rpm). Four vibration sensors are sampled at 10 kHz for 20-25 s, with ten records per condition.
+
+* **Sampling Rate:** 10 kHz
+* **Operating Conditions:** 1000 rpm at 7 radial loads (0-1200 N in 200 N steps); 600 N at 7 speeds (400-1600 rpm in 200 rpm steps); 20-25 s per record, 10 records per condition
+* **License:** none stated (no licence in GitHub repo; Baidu share has no terms)
+* **Caveats:** Download via Baidu Netdisk only (access code in the README). Bearing type and fault-making method not stated (paper closed access). No licence stated.
+* **Source:** [GitHub (Baidu link)](https://github.com/HDUIoTSCLab/PT500min_bearing_data) \| [Publication](https://doi.org/10.1109/TIM.2024.3470961)
+---
+
+### University of Ferrara Outer-Ring Defects
+
+Acceleration signals from a bearing test bench at the University of Ferrara, recorded for a study on modelling defective bearings. Self-aligning ball bearings (1205 ETN9) have EDM rectangular outer-ring defects of three nominal widths (about 0.9, 1.66 and 2.5 mm), each replicated on three bearings. The bearings are tested at 1000 and 2000 N radial load and 20, 30 and 40 Hz shaft frequency. Vertical acceleration is sampled at 51.2 kHz for 15 s (25.6 kHz for one defect) and supplied as .txt files with a PDF readme.
+
+* **Bearing:** Self-aligning ball bearing 1205 ETN9
+* **Sampling Rate:** 51.2 kHz (25.6 kHz for defect D2a)
+* **Operating Conditions:** Radial load 1000 and 2000 N; shaft frequency 20, 30, 40 Hz; 15 s records
+* **License:** CC BY 4.0
+* **Caveats:** No healthy-bearing recordings (outer-ring defects only). Distinct from the University of Ferrara run-to-failure dataset.
+* **Source:** [Mendeley](https://doi.org/10.17632/8wdzm5gwng.1) \| [Publication](https://doi.org/10.1016/j.ymssp.2022.109783)
+---
+
+### UESTC Bearing Dataset
+
+Small laboratory bearing dataset from UESTC, released with a paper on one-class target-domain bearing fault detection. ASAHI UCPH20 bearings are tested in four states: normal, ball pit (3 mm x 5 mm), and wire-cut inner race and outer race faults (0.55 mm x 1 mm). A single-axis accelerometer is sampled at 20 kHz with no load at 800, 1000, 1200 and 1400 rpm, giving 80 .mat files.
+
+* **Bearing:** ASAHI UCPH20 (pillow-block unit)
+* **Sampling Rate:** 20 kHz
+* **Operating Conditions:** No load; 800, 1000, 1200, 1400 rpm
+* **License:** none stated (no licence file; README says the data are open-source for any bearing fault detection research, and publications must cite the paper)
+* **Caveats:** Small (80 files). How the ball defect was made is not stated. No licence file; the README allows research use with citation.
+* **Source:** [GitHub](https://github.com/ChangLiu2024/UESTC-Bearing-Dataset) \| [Publication](https://doi.org/10.1109/JSEN.2025.3635217)
+---
+
+### LASPI Gearbox
+
+Laboratory dataset from a 1.5 kW three-phase induction motor, inverter-fed, driving a three-shaft gearbox with an electromagnetic brake (LASPI, Roanne). Seven health states cover healthy, two gear faults, inner- and outer-race faults of an intermediate-shaft ball bearing, and two combined gear-plus-bearing faults, each run at 3 speeds (1500-2700 rpm) and 4 load levels (84 experiments). CSV files contain three-phase current, three-phase voltage and one accelerometer near the intermediate shaft, sampled at 25.6 kHz for 10 s.
+
+* **Bearing:** Ball bearing, 9 balls, 0.3125 in ball dia., 1.5157 in pitch dia., 0 deg contact angle (model not named)
+* **Sampling Rate:** 25.6 kHz
+* **Operating Conditions:** 3 speeds (1500, 2100, 2700 rpm; 25/35/45 Hz) x 4 loads (0, 25, 50, 75 %); 10 s per file
+* **License:** CC BY 3.0
+* **Caveats:** Faulty components were supplied with the didactic platform; defect sizes are not given. Bearing faults are in 4 of 7 states (2 combined with gear faults).
+* **Source:** [UBFC Data](https://doi.org/10.25666/DATAUBFC-2023-03-06) \| [Publication](https://doi.org/10.36001/ijphm.2023.v14i2.3497)
+---
+
+### HUST Transmission System
+
+Vibration dataset from a SpectraQuest-type (SQI) transmission-chain rig: motor, coupling, shaft on two ER-16K bearings, belt drive and Hub City M2 gearbox. Fourteen system health states combine faults on the motor, left bearing (outer race), shaft (crack), right bearing (inner race), bearing housing, pulley and gearbox, including two single bearing faults and six compound states. Four single-axis accelerometers (motor, both bearing housings, gearbox) are sampled at 25.6 kHz under six constant speeds (20-70 Hz) and one 0-70-0 Hz run-up/run-down.
+
+* **Bearing:** ER-16K (left and right shaft support bearings)
+* **Sampling Rate:** 25.6 kHz
+* **Operating Conditions:** 6 constant speeds (20, 30, 40, 50, 60, 70 Hz) + 1 time-varying 0-70-0 Hz
+* **License:** Not stated
+* **Caveats:** Bearing faults are in 8 of 14 states (2 single, 6 compound); the state table is only in the Readme.pdf on Google Drive, and data are on Google Drive and Quark. No licence stated. Institution inferred from the same GitHub account as the HUST (Huazhong) bearing dataset.
+* **Source:** [GitHub](https://github.com/CHAOZHAO-1/HUSTTransmissionsystem-dataset) \| [Publication](https://doi.org/10.1016/j.eswa.2025.130962)
+---
+
+### VBL-VA001
+
+Triaxial vibration of small Panasonic GP-129JXK electric water pumps, recorded with an enDAQ shock and vibration logger at 20 kHz, in 5 s CSV files. There are four machine conditions with 1000 files each: normal, bearing fault (outer ring of an NTN 6201 damaged by hammer impact), 3 mm misalignment, and unbalance (6 and 27 g·cm, 500 files each). Released together with machine-learning baselines.
+
+* **Bearing:** NTN 6201 (pump bearing, per GitHub README)
+* **Sampling Rate:** 20 kHz
+* **Operating Conditions:** Small electric water pumps (Panasonic GP-129JXK); a single operating condition, speed and load not stated
+* **License:** CC BY 4.0
+* **Caveats:** Each class was recorded on a different pump, so machine identity is confounded with class. The bearing fault is 1 of 4 classes.
+* **Source:** [Zenodo](https://doi.org/10.5281/zenodo.7006575) \| [Publication](https://doi.org/10.1007/s42417-023-00959-9)
+---
+
+### HSE Similar System
+
+Bearing fault data from two test rigs at Hochschule Esslingen (IZP), intended for transfer learning between similar systems. Four bearing/rig combinations (NU204-E with plastic cage on both rigs, NU204-E with metal cage, STO20 needle bearing) carry healthy, inner race, outer race or rolling element faults made by removing material locally. Vibration and rotation speed were recorded at 15.625 kHz at 500 and 1000 rpm and two load levels, with five 1 s recordings per combination (300 recordings, one CSV).
+
+* **Bearing:** NU204-E cylindrical roller (plastic cage and metal cage) and STO20 needle roller
+* **Sampling Rate:** 15.625 kHz
+* **Operating Conditions:** Two test rigs; speeds 500 and 1000 rpm (set by hand); 2 load levels (rubber bumper screw)
+* **License:** CC BY 4.0
+* **Caveats:** The reference paper is a transfer-learning study, not a data paper.
+* **Source:** [Kaggle](https://www.kaggle.com/datasets/prognosticshse/similar-system-data-set-for-fault-diagnosis) \| [Publication](https://doi.org/10.1109/ACCESS.2025.3576435)
+---
+
+### UAQ / UPC Rotating Electromechanical System
+
+Multisensor laboratory data from a test bench in which a VFD-fed induction motor drives a DC generator load through a single-stage 4:1 gearbox. There are nine conditions: healthy, a motor bearing outer-race defect (1.191 mm drilled hole), half and one broken rotor bar, unbalance, misalignment, and gear-tooth wear at 25/50/75%. Each is recorded at 5, 15, 50 and 60 Hz supply set-points as start-up transients and 45-minute stationary runs. Signals are tri-axial vibration from a MEMS accelerometer on top of the gearbox (3 kHz), three stator currents (4 kHz), six RTD motor temperatures, infrared thermal images every 6 s, and speed.
+
+* **Sampling Rate:** Vibration 3 kHz; current 4 kHz; RTD temperature 1 kHz; IR images 1/6 Hz; speed 1/30 Hz
+* **Operating Conditions:** Induction motor (1.43 kW, WEG W22) -> 4:1 single-stage gearbox -> DC generator load; VFD set-points 5/15/50/60 Hz (300/900/3000/3600 rpm); 30 s start-up transient tests (5 repetitions) and 45 min stationary tests (1 run)
+* **License:** CC BY 4.0
+* **Caveats:** One bearing class (a single drilled outer-race hole). Vibration is measured at 3 kHz on the gearbox, not at the motor bearing.
+* **Source:** [CORA](https://doi.org/10.34810/data2500) \| [Publication](https://doi.org/10.1038/s41597-026-07224-0)
+---
+
+### SUBF v1.0: Bearing Fault Vibration Data
+
+Triaxial vibration data from a motor-shaft-bearing rig with a 3-phase 0.25 HP motor running at 1440 rpm. The left-side bearing was swapped between healthy, inner race fault and outer race fault units. A wireless BeanDevice AX-3D accelerometer sampled at 1 kHz. Six hours were recorded per class and cut into 10 s segments, giving 2160 signals per class (6480 in total) in both CSV and MAT format.
+
+* **Sampling Rate:** 1 kHz
+* **Operating Conditions:** 3-phase 0.25 HP AC motor, 1440 rpm, 50 Hz, 440 V; constant speed
+* **License:** CC BY-NC-SA 4.0
+* **Caveats:** Sampled at only 1 kHz. The reference paper is a method paper. Vibration counterpart of SUBF v2.0 (sound).
+* **Source:** [Kaggle](https://www.kaggle.com/datasets/sumairaziz/subf-v1-0-dataset-bearing-fault-vibration-data) \| [Publication](https://doi.org/10.1016/j.measurement.2023.112871)
+---
+
 ## Diagnosis — Acoustic and Non-Contact
 
 ### SUBF v2.0 Dataset: Bearing Faults Sound Data
@@ -612,18 +798,30 @@ The 'bearing' machine type in the DCASE Challenge Task 2 anomalous sound detecti
 
 ---
 
+### Selçuk University Radar Bearing
+
+Contactless bearing fault dataset from Selçuk University: a 24.125 GHz continuous-wave I/Q radar was pointed at a 1.1 kW induction motor whose 6205ZZ bearing was swapped among 16 conditions. The conditions are healthy, three lubricant-quantity faults, three excessive-load wear faults, and nine acid-corrosion faults on balls, outer ring and cage. Each class was recorded at 11 speeds (500-1500 rpm) and 5 brake loads (0-2.5 Nm), giving 880 recordings of 30 s with raw I/Q at 10 kHz, plus pre-computed time-domain features.
+
+* **Bearing:** 6205ZZ deep groove ball bearing
+* **Sampling Rate:** 10 kHz
+* **Operating Conditions:** 1.1 kW three-phase asynchronous motor with magnetic powder brake; 11 speeds 500-1500 rpm x 5 loads 0-2.5 Nm
+* **License:** Unknown (Kaggle license field 'Unknown')
+* **Caveats:** Kaggle licence "Unknown".
+* **Source:** [Kaggle](https://www.kaggle.com/datasets/yunusemreacar1/su-rf-sensing-lab-bearing-fault-diagnosis-dataset) \| [Publication](https://doi.org/10.34248/bsengineering.1673237)
+---
+
 ## Motor-Level and Drive-Signal Datasets
 
-### Mehran UET Motor Current
+### Mehran UET Motor Bearing (Vibration & Current)
 
-Three-phase stator current recordings of an induction motor from Mehran University of Engineering and Technology, Pakistan. Conditions are healthy, inner-race and outer-race bearing faults at six severities (0.7-1.7 mm) and a broken rotor bar. Each bearing fault is run at 100, 200 and 300 W load, and the broken rotor bar at 100 and 300 W. Currents are measured with non-invasive sensors at 10 kHz, 39 CSV files in total.
+Triaxial vibration of the drive-end bearing (6204-2Z/C3) of a three-phase induction motor belt-coupled to an alternator, from the NCRA Condition Monitoring Systems Lab at Mehran UET. Conditions are healthy and inner/outer race faults of six sizes (0.7-1.7 mm), each at 100, 200 and 300 W electrical load, for 38 CSV files. A MEMS accelerometer (ADXL355) on the motor housing was read through an NI myRIO at a stated 10 kHz in blocks of 1000 samples per channel.
 
-* **Sampling Rate:** 10 kHz
-* **Operating Conditions:** Loads 100 W, 200 W, 300 W (BRB at 100 W and 300 W only)
+* **Bearing:** 6204-2Z/C3 deep groove ball bearing (drive end)
+* **Sampling Rate:** 10 kHz (stated; acquired in 1000-sample blocks per channel)
+* **Operating Conditions:** Three-phase induction motor belt-coupled to an alternator with variable electrical load; 100 W, 200 W, 300 W; healthy recorded with and without pulley
 * **License:** CC BY 4.0
-* **Caveats:** No paper for the current data; rig details come from the same group's vibration dataset (Data in Brief, 2022).
-* **Source:** [Mendeley](https://doi.org/10.17632/gxdd74czwh.1)
-
+* **Caveats:** Vibration and current were recorded in the same runs (published as two Mendeley records). Files hold 1000-sample blocks with gaps rather than continuous streams.
+* **Source:** [Mendeley (vibration)](https://doi.org/10.17632/fm6xzxnf36.2) \| [Mendeley (current)](https://doi.org/10.17632/gxdd74czwh.1) \| [Publication](https://doi.org/10.1016/j.dib.2022.108315)
 ---
 
 ### MCC5-THU Motor
@@ -782,6 +980,18 @@ Benchmark for early fault detection in wind turbine SCADA data: 95 sub-datasets 
 * **Caveats:** Only 6 of the 45 anomaly events are bearing-related.
 * **Source:** [Zenodo](https://doi.org/10.5281/zenodo.10958774) \| [Publication](https://doi.org/10.3390/data9120138)
 
+---
+
+### Luleå Wind Turbine Drivetrain Vibration
+
+Field vibration data from the condition monitoring system of six wind turbines of the same type, each with a three-stage gearbox, in one wind farm in northern Sweden, over 46 consecutive months. Each file holds 1.28 s axial-vibration segments sampled at 12.8 kHz from an accelerometer on the gearbox output-shaft bearing housing (about one every 12 h), with time in years and shaft speed. One turbine had an inner-race failure of the output-shaft four-point ball bearing (replaced about 1.2 years in) and later an inner-race failure of a planet-stage cylindrical roller bearing, which led to a gearbox replacement about 2 years in. The other five turbines serve as healthy references.
+
+* **Bearing:** Gearbox output shaft (HSS) four-point contact ball bearing; first-stage planet cylindrical roller bearing (failed bearings)
+* **Sampling Rate:** 12.8 kHz (1.28 s segments of 16384 samples, about every 12 h)
+* **Operating Conditions:** 6 wind turbines of the same model (3-stage gearbox: 2 planetary + 1 helical) in one farm in northern Sweden; 46 consecutive months of variable-speed operation; axial accelerometer on the output-shaft bearing housing
+* **License:** Not stated
+* **Caveats:** No label column: the bearing failures are documented only in the paper, as times relative to the start of recording, and files are not mapped to turbines. No licence stated.
+* **Source:** [SND](https://doi.org/10.5878/bcmv-wq08) \| [Publication](https://doi.org/10.2991/ijcis.d.201105.001)
 ---
 
 ## Other Modalities

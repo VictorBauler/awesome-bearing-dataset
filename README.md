@@ -8,7 +8,7 @@ A curated collection of public datasets for bearing fault diagnosis and prognost
 
 ## Summary of Datasets
 
-Each dataset name links to its description in [docs/datasets.md](docs/datasets.md).
+Each dataset name links to its description in [docs/datasets.md](docs/datasets.md). [docs/coverage.md](docs/coverage.md) lists the sources searched and notable datasets that were left out.
 
 ### Core Datasets
 
@@ -28,12 +28,19 @@ The most widely used benchmarks, ordered by citations per year of their referenc
 | [KAIST Varying Load (Multi-Sensor)](docs/datasets.md#kaist-varying-load-multi-sensor) | KAIST | 2023 | Diagnosis | Artificial (method not stated) | Vibration, Acoustic, Temperature, Current |
 | [KAIST Varying Speed](docs/datasets.md#kaist-varying-speed) | KAIST | 2023 | Diagnosis | Artificial (method not stated) | Vibration, Current, Speed |
 | [FEMTO-ST (PRONOSTIA)](docs/datasets.md#femto-st-pronostia) | FEMTO-ST Institute | 2012 | Prognostics | Natural (Accelerated) | Vibration, Temperature |
+| [HIT Inter-Shaft Bearing (Aero-Engine)](docs/datasets.md#hit-inter-shaft-bearing-aero-engine) | Harbin Institute of Technology | 2023 | Diagnosis | Artificial (Wire Cutting) | Vibration, Displacement |
+| [MCC5-THU Gearbox](docs/datasets.md#mcc5-thu-gearbox) | Tsinghua University / MCC5 Group | 2024 | Diagnosis | Artificial (Laser Etched) | Vibration, Torque, Speed |
+| [SUSU Shaft-Mounted Wireless Sensor](docs/datasets.md#susu-shaft-mounted-wireless-sensor) | South Ural State University | 2021 | Diagnosis | Artificial (Rotary Tool) | Vibration (Linear & Angular, Shaft-Mounted) |
 | [HUST (Hanoi University of Science and Technology)](docs/datasets.md#hust-hanoi-university-of-science-and-technology) | Hanoi University of Science and Technology | 2023 | Diagnosis | Artificial (Cracks) | Vibration |
+| [SDUST Bearing and Gear](docs/datasets.md#sdust-bearing-and-gear) | Shandong University of Science and Technology | 2024 | Diagnosis | Artificial (method not stated) | Vibration (2 triaxial) |
 | [Politecnico di Torino (DIRG)](docs/datasets.md#politecnico-di-torino-dirg) | Politecnico di Torino | 2019 | Diagnosis/ Prognostics | Artificial (Indentations) & Natural | Vibration |
+| [NEEPU Bearing Dataset](docs/datasets.md#neepu-bearing-dataset) | Northeast Electric Power University | 2023 | Diagnosis | Artificial (method not stated) | Vibration |
 | [Jiangnan University (JNU)](docs/datasets.md#jiangnan-university-jnu) | Jiangnan University | ~2023 | Diagnosis | Artificial (Dents) | Vibration |
+| [SQ Variable-Speed Bearing (SQV)](docs/datasets.md#sq-variable-speed-bearing-sqv) | Xi'an Jiaotong University | 2022 | Diagnosis | Artificial (Machined) | Vibration, Speed |
 | [UORED-VAFCLS (University of Ottawa, 2023)](docs/datasets.md#uored-vafcls-university-of-ottawa-2023) | University of Ottawa | 2023 | Diagnosis | Not stated | Vibration, Acoustic, Load, Speed, Temperature |
 | [University of New South Wales (UNSW)](docs/datasets.md#university-of-new-south-wales-unsw) | University of New South Wales | 2022 | Prognostics | Natural (Accelerated) | Vibration |
 | [SDOL (Korea Aerospace University)](docs/datasets.md#sdol-korea-aerospace-university) | Korea Aerospace University | ~2021 | Diagnosis | Artificial | Vibration |
+| [NLN-EMP Navy E-Motor Pump](docs/datasets.md#nln-emp-navy-e-motor-pump) | Royal Netherlands Navy / University of Twente | 2023 | Diagnosis | Artificial (Milled, Grease Contamination) | Vibration, Current, Voltage |
 | [Machinery Failure Prevention Technology (MFPT)](docs/datasets.md#machinery-failure-prevention-technology-mfpt) | Machinery Failure Prevention Technology | ~2000s | Diagnosis | Artificial & Natural | Vibration |
 | [MAFAULDA (Machinery Fault Database)](docs/datasets.md#mafaulda-machinery-fault-database) | UFRJ | ~2018 | Diagnosis | Artificial | Vibration, Acoustic |
 | [PHM09 Gearbox](docs/datasets.md#phm09-gearbox) | PHM Society | 2009 | Diagnosis | Artificial | Vibration |
@@ -57,7 +64,7 @@ The most widely used benchmarks, ordered by citations per year of their referenc
 | [Tecnalia Gearbox, Variable Conditions](docs/datasets.md#tecnalia-gearbox-variable-conditions) | Tecnalia | 2025 | Diagnosis | Artificial (method not stated) | Vibration, Torque, Current |
 | [UC204 Outer Race Fault, Variable Load](docs/datasets.md#uc204-outer-race-fault-variable-load) | Universidade Federal da Paraíba | 2026 | Diagnosis | Artificial (Grooves) | Vibration |
 | [JUST Slewing Bearing](docs/datasets.md#just-slewing-bearing) | Jiangsu University of Science and Technology | 2023 | Diagnosis | Artificial (method not stated) | Vibration, Acoustic |
-| [Bearing 6213 Healthy vs. Compound Fault](docs/datasets.md#bearing-6213-healthy-vs-compound-fault) | VibroBox (Minsk) | 2020 | Diagnosis | Not stated | Vibration |
+| [VibroBox Bearing Datasets](docs/datasets.md#vibrobox-bearing-datasets) | VibroBox (Minsk) | 2020 | Diagnosis | Not stated | Vibration, Speed |
 | [Army Engineering University of PLA, Mixed Bearing–Gearbox](docs/datasets.md#army-engineering-university-of-pla-mixed-bearinggearbox) | Army Engineering University of PLA | 2025 | Diagnosis | Artificial (Cracks, Laser Etching) | Vibration (Triaxial) |
 | [Saarland University Cylindrical Roller IR Damage](docs/datasets.md#saarland-university-cylindrical-roller-ir-damage) | Saarland University / ZeMA | 2025 | Diagnosis | Artificial (Milled) | Vibration (3-axis), Force |
 | [MOIRA-UNIMORE Independent Cart System](docs/datasets.md#moira-unimore-independent-cart-system) | University of Modena and Reggio Emilia | 2025 | Diagnosis | Artificial (Laser) | Vibration, Position, Speed, Current |
@@ -74,6 +81,15 @@ The most widely used benchmarks, ordered by citations per year of their referenc
 | [University of Adelaide Defect Length Series](docs/datasets.md#university-of-adelaide-defect-length-series) | University of Adelaide | 2017 | Diagnosis | Artificial (method not stated) | Vibration, Displacement, Acoustic, Load |
 | [IFSP Bronze Plain-Bearing Bushing](docs/datasets.md#ifsp-bronze-plain-bearing-bushing) | Federal Institute of São Paulo (IFSP) | 2026 | Diagnosis | Artificial (Clearance, Eccentricity) | Vibration (MEMS) |
 | [CUMTB Wind Turbine Pitch Bearing](docs/datasets.md#cumtb-wind-turbine-pitch-bearing) | China University of Mining and Technology (Beijing) | 2025 | Diagnosis | Artificial (EDM) | Vibration, Acoustic |
+| [HDU PT500 Compound Faults](docs/datasets.md#hdu-pt500-compound-faults) | Hangzhou Dianzi University | 2024 | Diagnosis | Artificial (method not stated) | Vibration |
+| [University of Ferrara Outer-Ring Defects](docs/datasets.md#university-of-ferrara-outer-ring-defects) | University of Ferrara | 2022 | Diagnosis | Artificial (EDM) | Vibration |
+| [UESTC Bearing Dataset](docs/datasets.md#uestc-bearing-dataset) | University of Electronic Science and Technology of China | 2025 | Diagnosis | Artificial (Wire Cutting) | Vibration |
+| [LASPI Gearbox](docs/datasets.md#laspi-gearbox) | LASPI / FEMTO-ST | 2023 | Diagnosis | Artificial (method not stated) | Vibration, Current, Voltage |
+| [HUST Transmission System](docs/datasets.md#hust-transmission-system) | Huazhong University of Science and Technology | 2025 | Diagnosis | Artificial (method not stated) | Vibration |
+| [VBL-VA001](docs/datasets.md#vbl-va001) | Institut Teknologi Sepuluh Nopember | 2022 | Diagnosis | Artificial (Hammer Impact) | Vibration (Triaxial) |
+| [HSE Similar System](docs/datasets.md#hse-similar-system) | Esslingen University of Applied Sciences | 2025 | Diagnosis | Artificial (Grooves) | Vibration, Speed |
+| [UAQ / UPC Rotating Electromechanical System](docs/datasets.md#uaq--upc-rotating-electromechanical-system) | Univ. Autónoma de Querétaro / UPC | 2025 | Diagnosis | Artificial (Drilled) | Vibration, Current, Temperature, Thermal Images |
+| [SUBF v1.0: Bearing Fault Vibration Data](docs/datasets.md#subf-v10-bearing-fault-vibration-data) | UET Taxila | 2024 | Diagnosis | Artificial (method not stated) | Vibration (Triaxial) |
 
 ### Diagnosis — Acoustic and Non-Contact
 
@@ -86,12 +102,13 @@ The most widely used benchmarks, ordered by citations per year of their referenc
 | [HB-Bearing (Real Background Noise)](docs/datasets.md#hb-bearing-real-background-noise) | Yanshan University | 2025 | Diagnosis | Artificial (method not stated) | Acoustic |
 | [EJUST-PdM-1 (Video)](docs/datasets.md#ejust-pdm-1-video) | Egypt-Japan University of Science and Technology | 2026 | Diagnosis | Artificial (method not stated) | Video (4K, 60 fps) |
 | [DCASE Challenge Task 2 — Bearing](docs/datasets.md#dcase-challenge-task-2--bearing) | Hitachi / NTT | 2022 | Anomaly Detection | Artificial (Damaged Machine) | Acoustic |
+| [Selçuk University Radar Bearing](docs/datasets.md#selçuk-university-radar-bearing) | Selçuk University | 2025 | Diagnosis | Artificial (Lubrication, Corrosion, Wear) | Radar (24 GHz) |
 
 ### Motor-Level and Drive-Signal Datasets
 
 | Dataset | Originating Institution(s) | Year | Primary Task | Fault Generation | Key Signals |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| [Mehran UET Motor Current](docs/datasets.md#mehran-uet-motor-current) | Mehran University of Engineering and Technology | 2022 | Diagnosis | Artificial (method not stated) | Current |
+| [Mehran UET Motor Bearing (Vibration & Current)](docs/datasets.md#mehran-uet-motor-bearing-vibration--current) | Mehran University of Engineering and Technology | 2022 | Diagnosis | Artificial (method not stated) | Vibration (Triaxial), Current |
 | [MCC5-THU Motor](docs/datasets.md#mcc5-thu-motor) | Tsinghua University / MCC5 Group | 2026 | Diagnosis | Artificial (Laser Etched) | Vibration, Current, Torque, Speed |
 | [UOEMD-VAFCVS](docs/datasets.md#uoemd-vafcvs) | University of Ottawa | 2023 | Diagnosis | Artificial (Built into Motors) | Vibration, Acoustic, Temperature |
 | [IM-VACD (Smartphone)](docs/datasets.md#im-vacd-smartphone) | University of Ottawa | 2026 | Diagnosis | Artificial (Built into Motors) | Vibration, Acoustic (Smartphone) |
@@ -115,6 +132,7 @@ The most widely used benchmarks, ordered by citations per year of their referenc
 | [Fraunhofer LBF Wind Turbine](docs/datasets.md#fraunhofer-lbf-wind-turbine) | Fraunhofer LBF / TU Darmstadt | 2024 | Diagnosis | Artificial (Etched) | Vibration, Temperature, Wind |
 | [Siemens 2 MW Wind Turbine SCADA](docs/datasets.md#siemens-2-mw-wind-turbine-scada) | AGH University of Krakow | 2026 | Anomaly Detection | Natural (Field) | SCADA |
 | [CARE to Compare](docs/datasets.md#care-to-compare) | Fraunhofer IEE | 2024 | Anomaly Detection | Natural (Field) | SCADA |
+| [Luleå Wind Turbine Drivetrain Vibration](docs/datasets.md#luleå-wind-turbine-drivetrain-vibration) | Luleå University of Technology | 2018 | Anomaly Detection | Natural (Field) | Vibration, Speed |
 
 ### Other Modalities
 
