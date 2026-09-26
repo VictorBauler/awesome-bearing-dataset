@@ -39,7 +39,7 @@ Datasets whose reference paper has 10 or more citations per year, ordered by cit
 | [Jiangnan University (JNU)](docs/datasets.md#jiangnan-university-jnu) | Jiangnan University | ~2023 | Diagnosis | Artificial (Dents) | Vibration |
 | [SQ Variable-Speed Bearing (SQV)](docs/datasets.md#sq-variable-speed-bearing-sqv) | Xi'an Jiaotong University | 2022 | Diagnosis | Artificial (Machined) | Vibration, Speed |
 | [UOEMD-VAFCVS](docs/datasets.md#uoemd-vafcvs) | University of Ottawa | 2023 | Diagnosis | Artificial (Built into Motors) | Vibration, Acoustic, Temperature |
-| [UORED-VAFCLS (University of Ottawa, 2023)](docs/datasets.md#uored-vafcls-university-of-ottawa-2023) | University of Ottawa | 2023 | Diagnosis | Not stated | Vibration, Acoustic, Load, Speed, Temperature |
+| [UORED-VAFCLS (University of Ottawa, 2023)](docs/datasets.md#uored-vafcls-university-of-ottawa-2023) | University of Ottawa | 2023 | Diagnosis | Natural (Accelerated) | Vibration, Acoustic, Load, Speed, Temperature |
 | [URMA-CRTI](docs/datasets.md#urma-crti) | CRTI (Annaba, Algeria) | 2026 | Diagnosis | Artificial (method not stated) | Vibration |
 | [Lenze-MB](docs/datasets.md#lenze-mb) | Lenze SE | 2025 | Diagnosis | Artificial (Pitting) | Drive Signals (Current, Voltage, Encoder) |
 | [University of New South Wales (UNSW)](docs/datasets.md#university-of-new-south-wales-unsw) | University of New South Wales | 2022 | Prognostics | Natural (Accelerated) | Vibration |
@@ -55,7 +55,7 @@ Datasets whose reference paper has 10 or more citations per year, ordered by cit
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | [Politecnico di Torino (ISED)](docs/datasets.md#politecnico-di-torino-ised) | Politecnico di Torino | 2024 | Diagnosis | Artificial | Vibration, Temperature, Speed |
 | [Politecnico di Torino (ISED) Multiple Defects](docs/datasets.md#politecnico-di-torino-ised-multiple-defects) | Politecnico di Torino | 2025 | Diagnosis | Artificial (Compound) | Vibration, Temperature, Speed |
-| [German Aerospace Center (DLR)](docs/datasets.md#german-aerospace-center-dlr) | German Aerospace Center | 2023 | Diagnosis | Artificial (Spalls) | Vibration |
+| [German Aerospace Center (DLR)](docs/datasets.md#german-aerospace-center-dlr) | German Aerospace Center | 2023 | Diagnosis | Artificial (EDM Spalls) | Vibration |
 | [University of Seoul (UOS) Multi-Domain Compound Faults](docs/datasets.md#university-of-seoul-uos-multi-domain-compound-faults) | University of Seoul | 2024 | Diagnosis | Artificial | Vibration |
 | [Harbin Institute of Technology (HIT-SM)](docs/datasets.md#harbin-institute-of-technology-hit-sm) | Harbin Institute of Technology | ~2022 | Diagnosis | Artificial | Vibration |
 | [Vishwakarma Institute of Technology (VIT)](docs/datasets.md#vishwakarma-institute-of-technology-vit) | Vishwakarma Institute of Technology | 2024 | Diagnosis | Artificial | Vibration |
