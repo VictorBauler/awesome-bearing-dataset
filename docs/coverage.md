@@ -4,7 +4,7 @@ This page records where datasets were searched for and which notable candidates 
 
 ## Inclusion Standard
 
-A dataset is listed only if it is original, publicly available experimental or field data in which bearing condition is a labelled factor, and if every summary-table column and a short description can be filled from its repository record or paper. Mirrors, feature extractions, simulations, and code-only records are not listed.
+A dataset is listed only if it is original, publicly available experimental or field data in which bearing condition is labelled or documented (for field data, bearing failures with dates stated in the record or paper are accepted), and if every summary-table column and a short description can be filled from its repository record or paper. Mirrors, feature extractions, simulations, and code-only records are not listed.
 
 ## Sources Searched
 

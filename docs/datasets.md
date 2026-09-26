@@ -728,7 +728,7 @@ Triaxial vibration of small Panasonic GP-129JXK electric water pumps, recorded w
 
 ### HSE Similar System
 
-Bearing fault data from two test rigs at Hochschule Esslingen (IZP), intended for transfer learning between similar systems. Four bearing/rig combinations (NU204-E with plastic cage on both rigs, NU204-E with metal cage, STO20 needle bearing) carry healthy, inner race, outer race or rolling element faults made by removing material locally. Vibration and rotation speed were recorded at 15.625 kHz at 500 and 1000 rpm and two load levels, with five 1 s recordings per combination (300 recordings, one CSV).
+Bearing fault data from two test rigs at Hochschule Esslingen (IZP), intended for transfer learning between similar systems. Four bearing/rig combinations (NU204-E with plastic cage on both rigs, NU204-E with metal cage, STO20 needle bearing) carry healthy, inner race, outer race or rolling element faults made by removing material locally; the metal-cage NU204-E has no outer race fault. Vibration and rotation speed were recorded at 15.625 kHz at 500 and 1000 rpm and two load levels, with five 1 s recordings per combination (15 bearing/fault combinations, 300 recordings, one CSV).
 
 * **Bearing:** NU204-E cylindrical roller (plastic cage and metal cage) and STO20 needle roller
 * **Sampling Rate:** 15.625 kHz
@@ -853,11 +853,11 @@ Contactless bearing fault dataset from Selçuk University: a 24.125 GHz continuo
 
 ### Mehran UET Motor Bearing (Vibration & Current)
 
-Triaxial vibration of the drive-end bearing (6204-2Z/C3) of a three-phase induction motor belt-coupled to an alternator, from the NCRA Condition Monitoring Systems Lab at Mehran UET. Conditions are healthy and inner/outer race faults of six sizes (0.7-1.7 mm), each at 100, 200 and 300 W electrical load, for 38 CSV files. A MEMS accelerometer (ADXL355) on the motor housing was read through an NI myRIO at a stated 10 kHz in blocks of 1000 samples per channel.
+Triaxial vibration and three-phase stator current of a three-phase induction motor belt-coupled to an alternator, from the NCRA Condition Monitoring Systems Lab at Mehran UET. Conditions are healthy and inner/outer race faults of six sizes (0.7-1.7 mm) on the drive-end bearing (6204-2Z/C3), each at 100, 200 and 300 W electrical load. The current record also includes a broken rotor bar at 100 and 300 W. The vibration record has 38 CSV files and the current record 39. A MEMS accelerometer (ADXL355) on the motor housing was read through an NI myRIO, and currents were measured with non-invasive sensors; both records state 10 kHz in blocks of 1000 samples per channel.
 
 * **Bearing:** 6204-2Z/C3 deep groove ball bearing (drive end)
 * **Sampling Rate:** 10 kHz (stated; acquired in 1000-sample blocks per channel)
-* **Operating Conditions:** Three-phase induction motor belt-coupled to an alternator with variable electrical load; 100 W, 200 W, 300 W; healthy recorded with and without pulley
+* **Operating Conditions:** Three-phase induction motor belt-coupled to an alternator with variable electrical load; 100 W, 200 W, 300 W (broken rotor bar at 100 W and 300 W only); healthy vibration recorded with and without pulley
 * **License:** CC BY 4.0
 * **Caveats:** Vibration and current were recorded in the same runs (published as two Mendeley records). Files hold 1000-sample blocks with gaps rather than continuous streams.
 * **Source:** [Mendeley (vibration)](https://doi.org/10.17632/fm6xzxnf36.2) \| [Mendeley (current)](https://doi.org/10.17632/gxdd74czwh.1) \| [Publication](https://doi.org/10.1016/j.dib.2022.108315)
