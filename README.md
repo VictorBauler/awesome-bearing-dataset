@@ -4,6 +4,8 @@
 
 A curated collection of public datasets for bearing fault diagnosis and prognostics, intended for researchers and engineers in condition monitoring and predictive maintenance.
 
+To download many of these datasets and load them in a common format, see the Python library [BearingDatasets](https://github.com/VictorBauler/BearingDatasets).
+
 ---
 
 ## Summary of Datasets
@@ -141,6 +143,23 @@ Datasets whose reference paper has 10 or more citations per year, ordered by cit
 | [Wind Turbine Bearings with White Etching Cracks](docs/datasets.md#wind-turbine-bearings-with-white-etching-cracks) | DTU Wind Energy / NTNU | 2018 | Diagnosis | Natural (Accelerated) | Ultrasound Images |
 
 ---
+
+## Loading the Datasets in Python
+
+[BearingDatasets](https://github.com/VictorBauler/BearingDatasets) is a Python library that downloads public bearing and rotating-machinery datasets, many of them listed here, from their official sources (with checksum verification) and converts them to a single Parquet format with a shared metadata schema. It does not redistribute the data, and each dataset keeps its original license.
+
+```bash
+pip install bearing-datasets
+bearing-datasets root /data/bearing_datasets  # one-time: where built datasets are stored
+bearing-datasets build cwru
+```
+
+```python
+import bearing_datasets as bd
+ds = bd.open("cwru")
+```
+
+See the [BearingDatasets README](https://github.com/VictorBauler/BearingDatasets) for the list of supported datasets and the full API.
 
 ## 🤝 How to Contribute
 
